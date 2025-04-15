@@ -15,7 +15,10 @@ import {
   }
   
   function Users() {
-    return <h2>Users</h2>;
+    return <>
+    <h2>Users</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus possimus hic maiores enim sed unde saepe dolorum ullam nihil tempora, nulla non nesciunt iure incidunt nemo laudantium mollitia similique cupiditate.</p>
+    </>;
   }
 
 function header() {
