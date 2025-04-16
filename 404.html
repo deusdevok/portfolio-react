@@ -5,14 +5,42 @@
     <title>GitHub Pages Redirect</title>
     <script type="text/javascript">  
       var l = window.location;
-      // Build the URL correctly
+      // Get the pathname without the repo name
+      var pathSegments = l.pathname.split('/');
+      var repoName = 'portfolio-react';
+      
+      // Find the index of the repo name in the path
+      var repoIndex = -1;
+      for (var i = 0; i < pathSegments.length; i++) {
+        if (pathSegments[i] === repoName) {
+          repoIndex = i;
+          break;
+        }
+      }
+      
+      // Build the corrected path with proper slashes
+      var newPath = '';
+      if (repoIndex !== -1) {
+        newPath = '/' + repoName + '/';
+        // Add the rest of the path segments after the repo name
+        for (var j = repoIndex + 1; j < pathSegments.length; j++) {
+          if (pathSegments[j]) {
+            newPath += pathSegments[j] + '/';
+          }
+        }
+        // Remove trailing slash if not needed
+        if (newPath.length > 1 && pathSegments[pathSegments.length - 1] === '') {
+          newPath = newPath.slice(0, -1);
+        }
+      } else {
+        newPath = l.pathname;
+      }
+      
+      // Build the complete URL
       var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname + l.search + l.hash;
-
-      // Ensure there's a slash between '/portfolio-react' and the route
-      newUrl = newUrl.replace('/portfolio-react', '/portfolio-react/');
-
-      // Redirect to the correct URL with the slash
+        newPath + l.search + l.hash;
+      
+      // Redirect to the correct URL
       window.location.replace(newUrl);
     </script>
   </head>
