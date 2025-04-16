@@ -23,7 +23,7 @@ import {
 
 function header() {
     return (
-        <Router>
+        <Router basename="/portfolio-react">
             <div>
                 <nav>
                 <ul>
