@@ -2,19 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>GitHub Pages Issue</title>
+    <title>GitHub Pages Redirect</title>
     <script type="text/javascript">  
- 
-      var pathSegmentsToKeep = 0;
-
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // Adjust the path to remove the extra '/?/' and ensure the full path is preserved
+      var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname + l.search + l.hash;
+
+      // Remove the '/portfolio-react' prefix for the redirect
+      newUrl = newUrl.replace('/portfolio-react/', '/portfolio-react');
+
+      // Redirect to the correct URL
+      window.location.replace(newUrl);
     </script>
   </head>
   <body>
