@@ -4,46 +4,40 @@
     <meta charset="utf-8">
     <title>GitHub Pages Redirect</title>
     <script type="text/javascript">  
-      var l = window.location;
-      // Get the pathname without the repo name
-      var pathSegments = l.pathname.split('/');
-      var repoName = 'portfolio-react';
-      
-      // Find the index of the repo name in the path
-      var repoIndex = -1;
-      for (var i = 0; i < pathSegments.length; i++) {
-        if (pathSegments[i] === repoName) {
-          repoIndex = i;
-          break;
-        }
-      }
-      
-      // Build the corrected path with proper slashes
-      var newPath = '';
-      if (repoIndex !== -1) {
-        newPath = '/' + repoName + '/';
-        // Add the rest of the path segments after the repo name
-        for (var j = repoIndex + 1; j < pathSegments.length; j++) {
-          if (pathSegments[j]) {
-            newPath += pathSegments[j] + '/';
-          }
-        }
-        // Remove trailing slash if not needed
-        if (newPath.length > 1 && pathSegments[pathSegments.length - 1] === '') {
-          newPath = newPath.slice(0, -1);
-        }
+      // Prevent infinite redirect loops
+      if (sessionStorage.getItem('redirected')) {
+        sessionStorage.removeItem('redirected');
+        document.write('<html><body><p>Redirect loop detected. Please go to <a href="/portfolio-react/">home page</a>.</p></body></html>');
       } else {
-        newPath = l.pathname;
+        sessionStorage.setItem('redirected', 'true');
+        
+        var l = window.location;
+        var pathSegments = l.pathname.split('/').filter(Boolean); // Remove empty segments
+        var repoName = 'portfolio-react';
+        
+        // Find the repo name in the path
+        var repoIndex = pathSegments.indexOf(repoName);
+        
+        // Build the corrected path
+        var newPath = '/' + repoName + '/';
+        
+        // Add the remaining path segments
+        if (repoIndex !== -1 && repoIndex < pathSegments.length - 1) {
+          newPath += pathSegments.slice(repoIndex + 1).join('/');
+        }
+        
+        // Build the complete URL - don't add trailing slash to non-root paths
+        var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          newPath + l.search + l.hash;
+        
+        // Only redirect if the URL is actually different to prevent loops
+        if (newUrl !== l.href) {
+          window.location.replace(newUrl);
+        }
       }
-      
-      // Build the complete URL
-      var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        newPath + l.search + l.hash;
-      
-      // Redirect to the correct URL
-      window.location.replace(newUrl);
     </script>
   </head>
   <body>
+    <p>Redirecting...</p>
   </body>
 </html>
