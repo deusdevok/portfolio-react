@@ -5,14 +5,14 @@
     <title>GitHub Pages Redirect</title>
     <script type="text/javascript">  
       var l = window.location;
-      // Adjust the path to remove the extra '/?/' and ensure the full path is preserved
+      // Build the URL correctly
       var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname + l.search + l.hash;
 
-      // Remove the '/portfolio-react' prefix for the redirect
-      newUrl = newUrl.replace('/portfolio-react/', '/portfolio-react');
+      // Ensure there's a slash between '/portfolio-react' and the route
+      newUrl = newUrl.replace('/portfolio-react', '/portfolio-react/');
 
-      // Redirect to the correct URL
+      // Redirect to the correct URL with the slash
       window.location.replace(newUrl);
     </script>
   </head>
