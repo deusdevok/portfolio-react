@@ -91,3 +91,7 @@ The portfolio is configured to be deployed to GitHub Pages. To deploy your chang
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Fixing refresh bug in Github Pages
+
+To fix the issue of refresh, see https://github.com/rafgraph/spa-github-pages
