@@ -3,38 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>GitHub Pages Redirect</title>
-    <script type="text/javascript">  
-      // Prevent infinite redirect loops
-      if (sessionStorage.getItem('redirected')) {
-        sessionStorage.removeItem('redirected');
-        document.write('<html><body><p>Redirect loop detected. Please go to <a href="/portfolio-react/">home page</a>.</p></body></html>');
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the current URL and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new URL with only a query string and hash fragment.
+      
+      // Remove '/portfolio-react' from the path if present
+      var pathSegments = window.location.pathname.split('/');
+      var repoName = 'portfolio-react';
+      var repoIndex = pathSegments.indexOf(repoName);
+      var path = '';
+      
+      // Extract the path after the repo name
+      if (repoIndex !== -1) {
+        path = '/' + pathSegments.slice(repoIndex + 1).join('/');
       } else {
-        sessionStorage.setItem('redirected', 'true');
-        
-        var l = window.location;
-        var pathSegments = l.pathname.split('/').filter(Boolean); // Remove empty segments
-        var repoName = 'portfolio-react';
-        
-        // Find the repo name in the path
-        var repoIndex = pathSegments.indexOf(repoName);
-        
-        // Build the corrected path
-        var newPath = '/' + repoName + '/';
-        
-        // Add the remaining path segments
-        if (repoIndex !== -1 && repoIndex < pathSegments.length - 1) {
-          newPath += pathSegments.slice(repoIndex + 1).join('/');
-        }
-        
-        // Build the complete URL - don't add trailing slash to non-root paths
-        var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-          newPath + l.search + l.hash;
-        
-        // Only redirect if the URL is actually different to prevent loops
-        if (newUrl !== l.href) {
-          window.location.replace(newUrl);
-        }
+        path = window.location.pathname;
       }
+      
+      // If path doesn't start with a slash, add it
+      if (path && path.charAt(0) !== '/') {
+        path = '/' + path;
+      }
+      
+      // Encode the route to be used as a query parameter
+      var encodedPath = encodeURIComponent(
+        path + window.location.search + window.location.hash
+      );
+      
+      // Redirect to the index.html with the route information in query string
+      var redirectUrl = window.location.protocol + '//' +
+        window.location.hostname +
+        (window.location.port ? ':' + window.location.port : '') +
+        '/portfolio-react/?redirect=' + encodedPath;
+      
+      window.location.replace(redirectUrl);
     </script>
   </head>
   <body>

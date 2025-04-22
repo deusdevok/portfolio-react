@@ -1,0 +1,43 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Provides guidance and commands for deploying this React app to GitHub Pages
+globs: .github/workflows/deploy.yml,package.json
+alwaysApply: false
+---
+
+# GitHub Pages Deployment Guide
+
+This rule provides information on deploying this React application to GitHub Pages.
+
+## Prerequisites
+- Your homepage is set to: https://deusdevok.github.io/portfolio-react
+- You have GitHub Actions workflow setup in .github/workflows/deploy.yml
+
+## Deployment Process
+1. Make your changes to the codebase
+2. Commit and push your changes to the master branch
+3. GitHub Actions will automatically:
+   - Build your project with `npm run build`
+   - Deploy to GitHub Pages using the peaceiris/actions-gh-pages action
+
+## Manual Deployment (if needed)
+```bash
+# Install dependencies if needed
+npm install
+
+# Build the project
+npm run build
+
+# Deploy to GitHub Pages (requires gh-pages package)
+npm install --save-dev gh-pages
+npx gh-pages -d build
+```
+
+## Troubleshooting
+- Check GitHub Actions tab in your repository for build/deployment errors
+- Ensure your repository has proper permissions for GitHub Actions
+- Verify your homepage is correctly set in package.json
