@@ -177,7 +177,7 @@ function Header() {
       <div className="portfolio-app">
         <nav className="main-nav">
           <div className="logo">My Portfolio</div>
-          <button className="hamburger" onClick={toggleNav}>
+          <button className={`hamburger ${isNavOpen ? "open" : ""}`} onClick={toggleNav}>
             ☰
           </button>
           <ul className={`nav-links ${isNavOpen ? "show" : ""}`}>

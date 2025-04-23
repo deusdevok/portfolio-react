@@ -21,6 +21,7 @@
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-color);
+    overflow-x: hidden;
   }
   
   a {
@@ -67,6 +68,11 @@
     right: 2rem;
     top: 1rem;
     z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger.open {
+    transform: rotate(90deg);
   }
   
   .nav-links {
@@ -321,7 +327,7 @@
     }
     
     .nav-links {
-      display: none;
+      display: flex;
       flex-direction: column;
       position: absolute;
       top: 0;
@@ -332,12 +338,11 @@
       box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
       padding-top: 4rem;
       z-index: 999;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease-in-out;
       transform: translateX(100%);
     }
     
     .nav-links.show {
-      display: flex;
       transform: translateX(0);
     }
     
