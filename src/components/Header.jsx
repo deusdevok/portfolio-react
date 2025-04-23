@@ -166,23 +166,32 @@ function Contact() {
 }
 
 function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <Router basename="/portfolio-react">
       <div className="portfolio-app">
         <nav className="main-nav">
           <div className="logo">My Portfolio</div>
-          <ul className="nav-links">
+          <button className="hamburger" onClick={toggleNav}>
+            ☰
+          </button>
+          <ul className={`nav-links ${isNavOpen ? "show" : ""}`}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={toggleNav}>Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={toggleNav}>About</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects" onClick={toggleNav}>Projects</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={toggleNav}>Contact</Link>
             </li>
           </ul>
         </nav>
