@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Portfolio specific pages
 function Home() {
@@ -171,6 +171,23 @@ function Header() {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.style.transition = 'none';
+        setTimeout(() => {
+          navLinks.style.transition = 'transform 0.3s ease-in-out';
+        }, 100);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <Router basename="/portfolio-react">
