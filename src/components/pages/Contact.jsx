@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { useContent } from "../../hooks/useContent";
 
 function Contact() {
+    const { contact } = useContent();
+    const { title, form } = contact;
+
     const [formData, setFormData] = useState({
       name: "",
       email: "",
@@ -26,10 +30,10 @@ function Contact() {
   
     return (
       <div className="contact-container">
-        <h2>Contact Me</h2>
+        <h2>{title}</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">{form.name}</label>
             <input
               type="text"
               id="name"
@@ -40,7 +44,7 @@ function Contact() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">{form.email}</label>
             <input
               type="email"
               id="email"
@@ -51,7 +55,7 @@ function Contact() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{form.message}</label>
             <textarea
               id="message"
               name="message"
@@ -61,7 +65,7 @@ function Contact() {
               rows="5"
             ></textarea>
           </div>
-          <button type="submit" className="submit-button">Send Message</button>
+          <button type="submit" className="submit-button">{form.submit}</button>
         </form>
       </div>
     );

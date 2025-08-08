@@ -9,8 +9,8 @@
     },
     "about": {
       "title": "About Me",
-      "description": "Hi! I'm a passionate Python Backend developer...",
-      "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub"]
+      "description": "Hi! I'm a passionate Python Backend developer with expertise in FastAPI, Flask, and Django frameworks.\n\nI specialize in building efficient, scalable APIs and web services with a focus on clean code and best practices.",
+      "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub", "React", "AWS"]
     },
     "projects": [
       {
@@ -18,6 +18,20 @@
         "title": "E-commerce API",
         "description": "A high-performance RESTful API for e-commerce applications built with FastAPI",
         "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
+        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+      },
+      {
+        "id": 2,
+        "title": "Data Analytics Dashboard",
+        "description": "Web application for visualizing and analyzing large datasets",
+        "technologies": ["Flask", "SQLAlchemy", "Pandas", "Docker", "Redis"],
+        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+      },
+      {
+        "id": 3,
+        "title": "Content Management System",
+        "description": "Full featured CMS with admin panel and user management",
+        "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
         "githubUrl": "https://github.com/yourusername/ecommerce-api"
       }
     ],
