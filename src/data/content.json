@@ -1,0 +1,33 @@
+{
+    "home": {
+      "title": "Welcome to My Portfolio",
+      "hero": {
+        "title": "Python Backend Developer",
+        "description": "I build robust, scalable API services and web applications with FastAPI and Flask",
+        "cta": "View My Work"
+      }
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Hi! I'm a passionate Python Backend developer...",
+      "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub"]
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "E-commerce API",
+        "description": "A high-performance RESTful API for e-commerce applications built with FastAPI",
+        "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
+        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+      }
+    ],
+    "contact": {
+      "title": "Contact Me",
+      "form": {
+        "name": "Name",
+        "email": "Email", 
+        "message": "Message",
+        "submit": "Send Message"
+      }
+    }
+  }
