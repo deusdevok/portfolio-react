@@ -1,54 +1,11 @@
 import { useMemo, useState, useEffect } from "react";
-
-const defaultSkills = [
-  { key: "javascript", short: "JS", name: "JavaScript", levelLabel: "MASTER", percent: 95,
-    title: "JAVASCRIPT MASTERY",
-    description: "Advanced neural interface programming allows for seamless manipulation of web-based systems. The agent demonstrates exceptional proficiency in ECMAScript protocols and asynchronous operations.",
-    status: "MASTER:",
-    details: "Complete system integration achieved. Agent operates with machine-like precision in JavaScript environments.",
-    augmentation: "AUGMENTATION ACTIVE"
-  },
-  { key: "react", short: "RE", name: "React", levelLabel: "ADVANCED", percent: 90,
-    title: "REACT ENHANCEMENT",
-    description: "Component-based neural architecture modification enables rapid deployment of scalable user interfaces. Advanced hook protocols and state management systems fully integrated.",
-    status: "ADVANCED:",
-    details: "High-level proficiency achieved. Agent capable of constructing complex reactive systems with minimal resource overhead.",
-    augmentation: "NEURAL LINK ESTABLISHED"
-  },
-  { key: "nodejs", short: "NO", name: "Node.js", levelLabel: "ADVANCED", percent: 85,
-    title: "NODE.JS SERVER AUGMENTATION",
-    description: "Backend infrastructure modification allows for high-performance server-side operations. Asynchronous processing capabilities and API development protocols enhanced.",
-    status: "ADVANCED:",
-    details: "Extensive server-side integration complete. Agent maintains optimal performance across distributed systems.",
-    augmentation: "SERVER MATRIX ACTIVE"
-  },
-  { key: "python", short: "PY", name: "Python", levelLabel: "TRAINED", percent: 80,
-    title: "PYTHON PROTOCOL SUITE",
-    description: "Machine learning and data processing augmentations installed. Enhanced capability for algorithm development and automated system analysis.",
-    status: "TRAINED:",
-    details: "Solid foundation established. Agent demonstrates reliable performance in data manipulation and automation tasks.",
-    augmentation: "LEARNING ALGORITHMS ONLINE"
-  },
-  { key: "databases", short: "DB", name: "Databases", levelLabel: "TRAINED", percent: 75,
-    title: "DATABASE INTERFACE MODULE",
-    description: "Data storage and retrieval systems enhanced for optimal information management. SQL and NoSQL protocol compatibility achieved.",
-    status: "TRAINED:",
-    details: "Competent data architecture skills developed. Agent capable of designing and maintaining efficient database systems.",
-    augmentation: "DATA CORE SYNCHRONIZED"
-  },
-  { key: "cybersecurity", short: "CY", name: "Cybersecurity", levelLabel: "UNTRAINED", percent: 60,
-    title: "SECURITY PROTOCOL INITIALIZATION",
-    description: "Basic security augmentations installed. Threat detection and mitigation systems in development phase. Continuous learning protocols active.",
-    status: "UNTRAINED:",
-    details: "Foundation level security awareness achieved. Agent requires additional training modules for advanced threat analysis.",
-    augmentation: "SECURITY MATRIX LOADING..."
-  },
-];
+import { useContent } from "../../hooks/useContent";
 
 function Skills() {
-  const initialKey = defaultSkills[0].key;
+  const { skills } = useContent();
+  const initialKey = skills[0].key;
   const [activeKey, setActiveKey] = useState(initialKey);
-  const active = useMemo(() => defaultSkills.find(s => s.key === activeKey) || defaultSkills[0], [activeKey]);
+  const active = useMemo(() => skills.find(s => s.key === activeKey) || skills[0], [activeKey]);
 
   useEffect(() => {
     // glitch effect for section titles
@@ -77,10 +34,10 @@ function Skills() {
 
   return (
     <section className="content-section">
-      <h2 className="section-title">Augmentation Systems</h2>
+      <h2 className="section-title">Tech Stack</h2>
       <div className="skills-grid">
         <div className="skills-list">
-          {defaultSkills.map(skill => (
+          {skills.map(skill => (
             <div
               key={skill.key}
               className={`skill-item ${activeKey === skill.key ? 'active' : ''}`}
@@ -103,7 +60,8 @@ function Skills() {
             <div className="progress-fill" style={{ width: `${active.percent}%` }} />
           </div>
           <p>{active.description}</p>
-          <p className="status">{active.status}</p>
+          <br/>
+          <p className="status">{active.levelLabel}:</p>
           <p>{active.details}</p>
           <p className="augmentation-active">{active.augmentation}</p>
         </div>

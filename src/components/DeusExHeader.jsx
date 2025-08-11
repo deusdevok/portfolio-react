@@ -8,10 +8,11 @@ function DeusExHeader() {
   return (
     <header className="nav-header">
       <div className="nav-tabs">
-        <Link className={`nav-tab ${isActive("/about")}`} to="/about">BIOMOD</Link>
-        <Link className={`nav-tab ${isActive("/skills")}`} to="/skills">AUGMENTATIONS</Link>
-        <Link className={`nav-tab ${isActive("/projects")}`} to="/projects">MISSIONS</Link>
-        <Link className={`nav-tab ${isActive("/contact")}`} to="/contact">COMLINK</Link>
+        <Link className={`nav-tab ${isActive("/")}`} to="/">HOME</Link>
+        <Link className={`nav-tab ${isActive("/about")}`} to="/about">BIO</Link>
+        <Link className={`nav-tab ${isActive("/skills")}`} to="/skills">SKILLS</Link>
+        <Link className={`nav-tab ${isActive("/projects")}`} to="/projects">PROJECTS</Link>
+        <Link className={`nav-tab ${isActive("/contact")}`} to="/contact">CONTACT</Link>
       </div>
     </header>
   );

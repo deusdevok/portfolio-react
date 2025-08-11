@@ -133,8 +133,8 @@ body {
 }
 
 .skills-list {
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF;
+  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
+  border: 2px solid #00BFFF; */
   border-radius: 10px;
   padding: 20px;
 }
@@ -201,8 +201,8 @@ body {
 }
 
 .skill-description {
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF;
+  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
+  border: 2px solid #00BFFF; */
   border-radius: 10px;
   padding: 20px;
   transition: all 0.3s ease;
@@ -325,8 +325,8 @@ body {
 }
 
 .profile-panel {
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF;
+  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%); */
+  /* border: 2px solid #00BFFF; */
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -347,8 +347,8 @@ body {
 }
 
 .bio-panel {
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF;
+  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
+  border: 2px solid #00BFFF; */
   border-radius: 10px;
   padding: 20px;
 }

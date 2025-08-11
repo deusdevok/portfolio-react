@@ -61,7 +61,7 @@ function App() {
             {`> System Status: ONLINE`}<br/>
             {`> Neural Interface: STABLE`}<br/>
             {`> Last Update: ${new Date().toISOString().slice(0,10).replace(/-/g,'.')}`}<br/>
-            {`> All augmentations functioning within normal parameters`}<span className="cursor">_</span>
+            {`> Waiting for your contact `}<span className="cursor">_</span>
           </div>
         </footer>
       </div>
