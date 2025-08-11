@@ -1,11 +1,9 @@
-import { useMemo, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useContent } from "../../hooks/useContent";
 
 function Skills() {
   const { skills } = useContent();
-  const initialKey = skills[0].key;
-  const [activeKey, setActiveKey] = useState(initialKey);
-  const active = useMemo(() => skills.find(s => s.key === activeKey) || skills[0], [activeKey]);
+  const [selectedSkill] = useState(null);
 
   useEffect(() => {
     // glitch effect for section titles
@@ -32,38 +30,80 @@ function Skills() {
     return () => timers.forEach(t => clearInterval(t));
   }, []);
 
+  const getExperienceLevel = (years) => {
+    if (years >= 7) return { level: "EXPERT", color: "#00ff00" };
+    if (years >= 5) return { level: "ADVANCED", color: "#00BFFF" };
+    if (years >= 2) return { level: "INTERMEDIATE", color: "#FFD700" };
+    return { level: "BEGINNER", color: "#FF6B6B" };
+  };
+
+  const getMaxYears = () => Math.max(...skills.map(s => s.years || 0));
+
   return (
     <section className="content-section">
       <h2 className="section-title">Tech Stack</h2>
-      <div className="skills-grid">
-        <div className="skills-list">
-          {skills.map(skill => (
-            <div
-              key={skill.key}
-              className={`skill-item ${activeKey === skill.key ? 'active' : ''}`}
-              onClick={() => setActiveKey(skill.key)}
-            >
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div className="skill-icon">{skill.short}</div>
-                <div className="skill-info">
-                  <div className="skill-name">{skill.name}</div>
-                  <div className="skill-level">{skill.levelLabel}</div>
+      
+      <div className="skills-overview">
+        <div className="skills-grid-new">
+          {skills.sort((a, b) => b.years - a.years).map(skill => {
+            const experience = getExperienceLevel(skill.years || 0);
+            const maxYears = getMaxYears();
+            const progressPercent = ((skill.years || 0) / maxYears) * 100;
+            const skillIcon = skill.icon;
+            
+            return (
+              <div 
+                key={skill.key}
+                className={`skill-card ${selectedSkill?.key === skill.key ? 'selected' : ''}`}
+                // onClick={() => setSelectedSkill(skill)}
+              >
+                <div className="skill-card-header">
+                  <div className="skill-icon-new">
+                    {skillIcon ? (
+                      <img
+                        src={skillIcon}
+                        alt={`${skill.name} logo`}
+                        className="skill-logo"
+                      />
+                    ) : (
+                      skill.short
+                    )}
+                  </div>
+                  <div className="skill-info-new">
+                    <h3 className="skill-name-new">{skill.name}</h3>
+                    <div className="skill-level-new" style={{ color: experience.color }}>
+                      {experience.level}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="experience-display">
+                  <div className="years-number">{skill.years || 0}</div>
+                  <div className="years-label">YEARS</div>
+                </div>
+                
+                <div className="experience-timeline">
+                  <div className="timeline-bar">
+                    <div 
+                      className="timeline-fill" 
+                      style={{ 
+                        width: `${progressPercent}%`,
+                        backgroundColor: experience.color 
+                      }}
+                    />
+                  </div>
+                  <div className="timeline-scale">
+                    <span>0</span>
+                    <span>{maxYears}</span>
+                  </div>
+                </div>
+                
+                <div className="skill-description-preview">
+                  {skill.description}
                 </div>
               </div>
-              <div className="skill-points">{skill.percent}%</div>
-            </div>
-          ))}
-        </div>
-        <div className="skill-description">
-          <h3>{active.title}</h3>
-          <div className="progress-bar">
-            <div className="progress-fill" style={{ width: `${active.percent}%` }} />
-          </div>
-          <p>{active.description}</p>
-          <br/>
-          <p className="status">{active.levelLabel}:</p>
-          <p>{active.details}</p>
-          <p className="augmentation-active">{active.augmentation}</p>
+            );
+          })}
         </div>
       </div>
     </section>
