@@ -4,7 +4,7 @@ import { useContent } from "../../hooks/useContent";
 
 function Home() {
   const { home } = useContent();
-  const { title, hero } = home;
+  const { hero } = home;
 
   useEffect(() => {
     document.body.classList.add('scan-lines');
