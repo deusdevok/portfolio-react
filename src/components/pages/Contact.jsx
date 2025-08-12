@@ -1,8 +1,14 @@
+import { useContent } from "../../hooks/useContent";
+
 function Contact() {
+  const { contact } = useContent();
+  const { email, linkedin, github } = contact;
+
   return (
     <section className="content-section">
       <h2 className="section-title">Communication Links</h2>
       <div className="contact-grid" style={{ marginBottom: 30 }}>
+        <a className="clickable-card" href={`mailto:${email}`}>
         <div className="contact-card">
           <div className="contact-icon" aria-label="Email" title="Email">
             <svg role="img" viewBox="0 0 24 24" width="36" height="36" fill="#000" aria-hidden="true">
@@ -10,9 +16,11 @@ function Contact() {
             </svg>
           </div>
           <h3>SECURE MAIL</h3>
-          <p style={{ color: '#C0C0C0', margin: '10px 0' }}>john.doe@encrypted.net</p>
+          <p style={{ color: '#C0C0C0', margin: '10px 0' }}>{email}</p>
           <p style={{ color: '#1E90FF' }}>STATUS: ACTIVE</p>
         </div>
+        </a>
+        <a className="clickable-card" href={linkedin} target="_blank" rel="noopener noreferrer">
         <div className="contact-card">
           <div className="contact-icon" aria-label="LinkedIn" title="LinkedIn">
             <svg role="img" viewBox="0 0 24 24" width="36" height="36" fill="#000" aria-hidden="true">
@@ -20,9 +28,11 @@ function Contact() {
             </svg>
           </div>
           <h3>PROFESSIONAL NETWORK</h3>
-          <p style={{ color: '#C0C0C0', margin: '10px 0' }}>linkedin.com/in/johndoe</p>
+          <p style={{ color: '#C0C0C0', margin: '10px 0' }}>{linkedin}</p>
           <p style={{ color: '#1E90FF' }}>STATUS: VERIFIED</p>
         </div>
+        </a>
+        <a className="clickable-card" href={github} target="_blank" rel="noopener noreferrer">
         <div className="contact-card">
           <div className="contact-icon" aria-label="GitHub" title="GitHub">
             <svg role="img" viewBox="0 0 24 24" width="36" height="36" fill="#000" aria-hidden="true">
@@ -30,9 +40,10 @@ function Contact() {
             </svg>
           </div>
           <h3>CODE REPOSITORY</h3>
-          <p style={{ color: '#C0C0C0', margin: '10px 0' }}>github.com/johndoe</p>
+          <p style={{ color: '#C0C0C0', margin: '10px 0' }}>{github}</p>
           <p style={{ color: '#1E90FF' }}>STATUS: PUBLIC</p>
         </div>
+        </a>
       </div>
     </section>
   );

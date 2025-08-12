@@ -12,6 +12,7 @@ export const useContent = () => {
     about: data.about,
     projects: data.projects,
     skills: data.skills,
+    contact: data.contact,
     // Helper functions
     getProjectById: (id) => data.projects.find(p => p.id === id),
     getSkills: () => data.about.skills

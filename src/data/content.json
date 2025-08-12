@@ -12,6 +12,11 @@
       "description": "<p>I'm a Python backend developer with a strong foundation in mathematics, problem-solving, and software architecture. I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.</p><br><p>My experience spans freelance projects, personal applications, and collaborative development. I enjoy learning new technologies — from modern frontend tools like React to infrastructure-as-code with Terraform — and I'm always exploring ways to improve my craft.</p><br><p>Outside of coding, I love chess, trivia, and exploring the history of science and technology.</p>",
       "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub", "React", "AWS"]
     },
+    "contact": {
+      "email": "carlosaprado@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/carlosaprado/",
+      "github": "https://github.com/deusdevok"
+    },
     "skills": [
       { 
         "key": "python", 

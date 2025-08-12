@@ -48,6 +48,11 @@ body {
   padding: 20px;
 }
 
+.clickable-card {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ==========================================================================
    ANIMATIONS
    ========================================================================== */
@@ -483,20 +488,56 @@ body {
    ========================================================================== */
 .terminal-footer {
   margin-top: 50px;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
-  border: 1px solid #00BFFF;
-  border-radius: 5px;
+  padding: 25px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 31, 63, 0.8) 100%);
+  border: 2px solid #00BFFF;
+  border-radius: 8px;
   font-family: 'Courier New', monospace;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
 }
 
 .terminal-text {
   color: #00BFFF;
   font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.terminal-header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+.terminal-links {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+.terminal-links a {
+  color: #00BFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terminal-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #00BFFF;
+}
+
+.terminal-status {
+  font-weight: bold;
 }
 
 .cursor {
   animation: blink 1s infinite;
+  color: #ffffff;
+}
+
+/* Add hover effects for interactive elements */
+.terminal-footer:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.4);
 }
 
 /* ==========================================================================

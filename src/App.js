@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
+import { useContent } from "./hooks/useContent";
 import DeusExHeader from "./components/DeusExHeader";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -10,6 +11,8 @@ import Skills from "./components/pages/Skills";
 import './styles/deusex.css';
 
 function App() {
+  const { contact } = useContent();
+  const { email, linkedin, github } = contact;
   useEffect(() => {
     // global scan-line overlay
     document.body.classList.add('scan-lines');
@@ -58,10 +61,21 @@ function App() {
         </main>
         <footer className="terminal-footer">
           <div className="terminal-text">
-            {`> System Status: ONLINE`}<br/>
-            {`> Neural Interface: STABLE`}<br/>
-            {`> Last Update: ${new Date().toISOString().slice(0,10).replace(/-/g,'.')}`}<br/>
-            {`> Waiting for your contact `}<span className="cursor">_</span>
+            <div className="terminal-header">
+              {`> PORTFOLIO TERMINAL v1.0.0`}<br/>
+              {`> Last Access: ${new Date().toLocaleString()}`}<br/>
+            </div>
+            <div className="terminal-links">
+              {`> Quick Access:`}<br/>
+              {`> [1] `}<a href={github} target="_blank" rel="noopener noreferrer">GitHub</a><br/>
+              {`> [2] `}<a href={linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
+              {`> [3] `}<a href={`mailto:${email}`}>Email</a><br/>
+              {`> [4] `}<a href="/resume.pdf" download="carlosresume.pdf">Resume</a><br/>
+            </div>
+            <div className="terminal-status">
+              {`> System Status: ONLINE`}<br/>
+              {`> Ready for deployment `}<span className="cursor">_</span>
+            </div>
           </div>
         </footer>
       </div>
