@@ -70,7 +70,7 @@ function App() {
               {`> [1] `}<a href={github} target="_blank" rel="noopener noreferrer">GitHub</a><br/>
               {`> [2] `}<a href={linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
               {`> [3] `}<a href={`mailto:${email}`}>Email</a><br/>
-              {`> [4] `}<a href="/resume.pdf" download="carlosresume.pdf">Resume</a><br/>
+              {`> [4] `}<a href={`${process.env.PUBLIC_URL}/resume.pdf`} download="carlosresume.pdf">Resume</a><br/>
             </div>
             <div className="terminal-status">
               {`> System Status: ONLINE`}<br/>
