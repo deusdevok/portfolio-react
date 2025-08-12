@@ -1,3 +1,10 @@
+/* ==========================================================================
+   DEUS EX STYLED PORTFOLIO - CLEANED & ORGANIZED
+   ========================================================================== */
+
+/* ==========================================================================
+   IMPORTS & RESET
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 * {
@@ -6,6 +13,9 @@
   box-sizing: border-box;
 }
 
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
 body {
   font-family: 'Orbitron', monospace;
   background: linear-gradient(135deg, #0a0a0a 0%, #001F3F 50%, #0074D9 100%);
@@ -38,7 +48,59 @@ body {
   padding: 20px;
 }
 
-/* Header Navigation */
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes chromeShine {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   LAYOUT COMPONENTS
+   ========================================================================== */
+.content-section {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  background: linear-gradient(145deg, #C0C0C0, #A8A8A8, #C0C0C0, #ffffff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: chromeShine 3s ease-in-out infinite;
+  text-shadow: 
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25);
+}
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
 .nav-header {
   background: linear-gradient(90deg, rgba(0, 191, 255, 0.1) 0%, rgba(30, 144, 255, 0.1) 100%);
   border: 2px solid #00BFFF;
@@ -83,240 +145,9 @@ body {
   box-shadow: 0 0 25px rgba(0, 191, 255, 0.8);
 }
 
-/* Content Sections */
-.content-section {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.section-title {
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 900;
-  background: linear-gradient(145deg, #C0C0C0, #A8A8A8, #C0C0C0, #ffffff);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: chromeShine 3s ease-in-out infinite;
-  text-shadow: 
-    0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25);
-}
-
-@keyframes chromeShine {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-/* Skills Section */
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.skills-list {
-  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF; */
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 191, 255, 0.3);
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-}
-
-.skill-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-.skill-item:hover {
-  background: rgba(0, 191, 255, 0.1);
-  transform: translateX(5px);
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
-}
-
-.skill-item.active {
-  background: rgba(0, 191, 255, 0.15);
-  border-color: #1E90FF;
-  transform: translateX(10px);
-}
-
-.skill-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  color: #000;
-  margin-right: 15px;
-}
-
-.skill-info { flex: 1; }
-
-.skill-name {
-  font-weight: 700;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.skill-level {
-  font-size: 0.9em;
-  color: #1E90FF;
-}
-
-.skill-points {
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #C0C0C0;
-}
-
-.skill-description {
-  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF; */
-  border-radius: 10px;
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-
-.skill-description h3 {
-  color: #00BFFF;
-  margin-bottom: 15px;
-  font-size: 1.3em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.skill-description p {
-  color: #C0C0C0;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.skill-description .status { color: #A8A8A8; font-weight: 700; text-transform: uppercase; }
-.skill-description .augmentation-active { color: #1E90FF; font-weight: 700; text-shadow: 0 0 5px #1E90FF; }
-
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  background: rgba(0, 31, 63, 0.5);
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 10px 0;
-}
-
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #00BFFF, #1E90FF);
-  border-radius: 4px;
-  transition: width 1s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
-}
-
-/* Projects Section */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
-}
-
-.project-card {
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF;
-  border-radius: 10px;
-  padding: 20px;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid rgba(0,191,255,0.4);
-  margin-bottom: 15px;
-  display: block;
-}
-
-.project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 191, 255, 0.3); }
-
-.project-header { display: flex; align-items: center; margin-bottom: 15px; }
-
-.project-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  color: #000;
-  margin-right: 15px;
-  font-size: 1.5em;
-}
-
-.project-title { font-size: 1.3em; font-weight: 700; text-transform: uppercase; }
-.project-description { margin-bottom: 15px; line-height: 1.6; color: #C0C0C0; }
-.tech-stack { margin-bottom: 15px; }
-
-.tech-tag {
-  display: inline-block;
-  background: rgba(0, 191, 255, 0.2);
-  border: 1px solid #00BFFF;
-  padding: 5px 10px;
-  margin: 2px;
-  border-radius: 3px;
-  font-size: 0.8em;
-  text-transform: uppercase;
-}
-
-.project-links { display: flex; gap: 10px; }
-.project-link {
-  background: linear-gradient(135deg, #001F3F 0%, #0074D9 100%);
-  color: #00BFFF;
-  border: 2px solid #00BFFF;
-  padding: 8px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-.project-link:hover { background: rgba(0, 191, 255, 0.1); transform: translateY(-2px); }
-
-/* About Section */
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -325,8 +156,6 @@ body {
 }
 
 .profile-panel {
-  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%); */
-  /* border: 2px solid #00BFFF; */
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -347,46 +176,19 @@ body {
 }
 
 .bio-panel {
-  /* background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF; */
   border-radius: 10px;
   padding: 20px;
 }
 
-.bio-text { line-height: 1.8; color: #C0C0C0; margin-bottom: 20px; }
-
-/* Contact Section */
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+.bio-text {
+  line-height: 1.8;
+  color: #C0C0C0;
+  margin-bottom: 20px;
 }
 
-.contact-card {
-  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
-  border: 2px solid #00BFFF;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.contact-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 191, 255, 0.3); }
-
-.contact-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  color: #000;
-  margin: 0 auto 15px;
-}
-
-/* New Skills Grid Layout */
+/* ==========================================================================
+   SKILLS SECTION
+   ========================================================================== */
 .skills-overview {
   display: flex;
   gap: 30px;
@@ -444,33 +246,9 @@ body {
   margin-bottom: 15px;
 }
 
-.skill-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* transition: transform 0.3s ease; */
-}
-
-/* .skill-card:hover .skill-logo {
-  transform: scale(0.8);
-} */
-
-/* Alternative: Keep original colors */
-.skill-logo-colored {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover .skill-logo-colored {
-  transform: scale(1.1);
-}
-
 .skill-icon-new {
   width: 50px;
   height: 50px;
-  /* background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%); */
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -479,6 +257,12 @@ body {
   color: #000;
   margin-right: 15px;
   font-size: 1.2em;
+}
+
+.skill-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .skill-info-new {
@@ -555,96 +339,148 @@ body {
   opacity: 0.8;
 }
 
-.skill-detail-panel {
-  flex: 1;
+/* ==========================================================================
+   PROJECTS SECTION
+   ========================================================================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
   background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
   border: 2px solid #00BFFF;
   border-radius: 10px;
-  padding: 25px;
-  max-height: 500px;
-  overflow-y: auto;
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.detail-header {
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid rgba(0, 191, 255, 0.3);
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.3);
 }
 
-.detail-header h3 {
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #C0C0C0;
-  margin-bottom: 10px;
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(0,191,255,0.4);
+  margin-bottom: 15px;
+  display: block;
 }
 
-.detail-experience {
+.project-header {
   display: flex;
-  gap: 20px;
   align-items: center;
-}
-
-.detail-years {
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #00BFFF;
-  text-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
-}
-
-.detail-level {
-  font-size: 0.9em;
-  font-weight: 700;
-  color: #1E90FF;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.detail-content p {
-  line-height: 1.6;
-  color: #C0C0C0;
   margin-bottom: 15px;
 }
 
-.detail-augmentation {
-  margin-top: 20px;
-  padding: 15px;
-  background: rgba(0, 191, 255, 0.1);
+.project-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%);
   border-radius: 5px;
-  border-left: 4px solid #1E90FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #000;
+  margin-right: 15px;
+  font-size: 1.5em;
 }
 
-.augmentation-label {
-  display: block;
-  font-size: 0.9em;
+.project-title {
+  font-size: 1.3em;
   font-weight: 700;
-  color: #A8A8A8;
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
 
-.augmentation-text {
-  color: #1E90FF;
+.project-description {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #C0C0C0;
+}
+
+.tech-stack {
+  margin-bottom: 15px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: rgba(0, 191, 255, 0.2);
+  border: 1px solid #00BFFF;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-link {
+  background: linear-gradient(135deg, #001F3F 0%, #0074D9 100%);
+  color: #00BFFF;
+  border: 2px solid #00BFFF;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
   font-weight: 700;
-  text-shadow: 0 0 5px #1E90FF;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .skills-overview {
-    flex-direction: column;
-  }
-  
-  .skills-grid-new {
-    grid-template-columns: 1fr;
-  }
-  
-  .skill-detail-panel {
-    max-height: none;
-  }
+.project-link:hover {
+  background: rgba(0, 191, 255, 0.1);
+  transform: translateY(-2px);
 }
 
-/* Terminal-style footer */
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, rgba(0, 191, 255, 0.05) 0%, rgba(30, 144, 255, 0.05) 100%);
+  border: 2px solid #00BFFF;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.3);
+}
+
+.contact-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #000;
+  margin: 0 auto 15px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 .terminal-footer {
   margin-top: 50px;
   padding: 20px;
@@ -654,8 +490,30 @@ body {
   font-family: 'Courier New', monospace;
 }
 
-.terminal-text { color: #00BFFF; font-size: 0.9em; }
-.cursor { animation: blink 1s infinite; }
-@keyframes blink { 50% { opacity: 0; } }
+.terminal-text {
+  color: #00BFFF;
+  font-size: 0.9em;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 768px) {
+  .skills-overview {
+    flex-direction: column;
+  }
+  
+  .skills-grid-new {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
 
 
