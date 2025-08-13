@@ -25,8 +25,8 @@ function Home() {
         
           <Link to="/projects" className="project-link" style={{ display: 'inline-block', marginTop: 12 }}>{hero.cta}</Link>
         </div>
-        <div className="bio-panel">
-          <div className="bio-text" dangerouslySetInnerHTML={{ __html: hero.description }} />
+        <div className="home-panel">
+          <div className="home-text" dangerouslySetInnerHTML={{ __html: hero.description }} />
         </div>
       </div>
     </section>

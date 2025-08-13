@@ -10,7 +10,49 @@
     "about": {
       "title": "About Me",
       "description": "<p>I'm a Python backend developer with a strong foundation in mathematics, problem-solving, and software architecture. I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.</p><br><p>My experience spans freelance projects, personal applications, and collaborative development. I enjoy learning new technologies — from modern frontend tools like React to infrastructure-as-code with Terraform — and I'm always exploring ways to improve my craft.</p><br><p>Outside of coding, I love chess, trivia, and exploring the history of science and technology.</p>",
-      "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub", "React", "AWS"]
+      "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub", "React", "AWS"],
+      "experience": [
+        {
+          "company": "Freelance",
+          "title": "Python Developer",
+          "description": "I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.",
+          "period": "2018 - Present"
+        },
+        {
+          "company": "Pipol",
+          "title": "Backend Developer",
+          "description": "I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI. I also used GraphQL with Strawberry and Graphene.",
+          "period": "2024 - 2025"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Universidad de Buenos Aires",
+          "degree": "Bachelor of Science in Physics",
+          "description": "I've studied physics at the University of Buenos Aires, where I learned about the fundamental principles of the universe and how to apply them to real-world problems.",
+          "period": "2009 - 2017"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect - Associate",
+          "issuer": "Amazon Web Services",
+          "description": "I've passed the AWS Solutions Architect Associate exam, which is a certification that proves my ability to design and deploy scalable and secure applications on the AWS platform.",
+          "period": "2024"
+        },
+        {
+          "name": "GraphQL with Python and FastAPI",
+          "issuer": "Udemy",
+          "description": "I've learned how to use GraphQL with Python and FastAPI to build scalable and efficient APIs.",
+          "period": "2024"
+        },
+        {
+          "name": "Terraform",
+          "issuer": "Udemy",
+          "description": "I've learned how to use Terraform to deploy and manage infrastructure as code.",
+          "period": "2024"
+        }
+      ]
     },
     "contact": {
       "email": "carlosaprado@gmail.com",
