@@ -3,7 +3,7 @@
       "title": "Welcome to My Portfolio",
       "hero": {
         "title": "Python Developer",
-        "description": "Since 2018 I've been working as a Python developer. With a background in physics and a passion for building clean, scalable solutions, I've worked on projects ranging from web applications to automation scripts. I enjoy tackling complex problems and delivering efficient, maintainable code.",
+        "description": "<p>Since 2018 I've been working as a Python developer.</p><br><p>With a background in physics and a passion for building clean, scalable solutions, I've worked on projects ranging from web applications to automation scripts.</p><br><p>I enjoy tackling complex problems and delivering efficient, maintainable code.</p>",
         "cta": "View My Work"
       }
     },

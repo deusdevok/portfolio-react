@@ -15,14 +15,18 @@ function Home() {
     <section className="content-section">
       <h2 className="section-title">Carlos - Python Developer</h2>
       <div className="about-content" style={{ marginTop: 20 }}>
-        <div className="profile-panel">
-          <div className="profile-avatar">JD</div>
-          {/* <h3>{hero.title}</h3>
-          <p style={{ color: '#C0C0C0', marginTop: 8 }}>{title}</p> */}
+      <div className="profile-panel">
+          <div className="profile-avatar">
+            <img className="profile-avatar-img" src={`${process.env.PUBLIC_URL}/avatar.jpeg`} alt="Carlos" />
+          </div>
+          <h3>CARLOS</h3>
+          <p style={{ color: '#1E90FF', margin: '10px 0' }}>PYTHON DEVELOPER</p>
+          <p style={{ color: '#C0C0C0' }}>ACTIVE SINCE: 2018</p>
+        
           <Link to="/projects" className="project-link" style={{ display: 'inline-block', marginTop: 12 }}>{hero.cta}</Link>
         </div>
         <div className="bio-panel">
-          <p className="bio-text">{hero.description}</p>
+          <div className="bio-text" dangerouslySetInnerHTML={{ __html: hero.description }} />
         </div>
       </div>
     </section>
