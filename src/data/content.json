@@ -10,19 +10,20 @@
     "about": {
       "title": "About Me",
       "description": "<p>I'm a Python backend developer with a strong foundation in mathematics, problem-solving, and software architecture. I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.</p><br><p>My experience spans freelance projects, personal applications, and collaborative development. I enjoy learning new technologies — from modern frontend tools like React to infrastructure-as-code with Terraform — and I'm always exploring ways to improve my craft.</p><br><p>Outside of coding, I love chess, trivia, and exploring the history of science and technology.</p>",
-      "skills": ["Python", "FastAPI", "Flask", "Django", "RESTful APIs", "SQL/NoSQL Databases", "Docker", "CI/CD", "Git & GitHub", "React", "AWS"],
       "experience": [
         {
           "company": "Freelance",
           "title": "Python Developer",
           "description": "I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.",
-          "period": "2018 - Present"
+          "period": "2018 - Present",
+          "skills": ["Python", "FastAPI", "Flask", "AWS"]
         },
         {
           "company": "Pipol",
           "title": "Backend Developer",
           "description": "I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI. I also used GraphQL with Strawberry and Graphene.",
-          "period": "2024 - 2025"
+          "period": "2024 - 2025",
+          "skills": ["Python", "FastAPI", "Flask", "GCP", "Docker", "GraphQL"]
         }
       ],
       "education": [
