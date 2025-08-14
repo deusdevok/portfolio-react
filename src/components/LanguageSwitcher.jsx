@@ -9,16 +9,18 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="language-switcher">
+    <div className="language-switcher-container">
       <button
-        className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+        className={`nav-tab lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
         onClick={() => changeLanguage('en')}
+        title="English"
       >
         EN
       </button>
       <button
-        className={`lang-btn ${i18n.language === 'es' ? 'active' : ''}`}
+        className={`nav-tab lang-btn ${i18n.language === 'es' ? 'active' : ''}`}
         onClick={() => changeLanguage('es')}
+        title="Español"
       >
         ES
       </button>

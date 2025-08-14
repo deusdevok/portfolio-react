@@ -57,8 +57,8 @@
     },
     "contact": {
       "email": "carlosaprado@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/carlosaprado/",
-      "github": "https://github.com/deusdevok"
+      "linkedin": "/in/carlosaprado/",
+      "github": "@deusdevok"
     },
     "skills": [
       { 
@@ -173,13 +173,13 @@
         "githubUrl": "https://github.com/yourusername/ecommerce-api"
       }
     ],
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "skills": "Skills",
-      "projects": "Projects",
-      "contact": "Contact"
-    },
+      "navigation": {
+    "home": "HOME",
+    "about": "BIO",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
     "footer": {
       "terminalHeader": "PORTFOLIO TERMINAL v1.0.0",
       "lastAccess": "Last Access",

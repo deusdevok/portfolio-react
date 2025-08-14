@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useContent } from "./hooks/useContent";
 import DeusExHeader from "./components/DeusExHeader";
-import LanguageSwitcher from "./components/LanguageSwitcher";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
@@ -56,7 +55,6 @@ function App() {
     <Router basename="/portfolio-react">
       <div className="container">
         <DeusExHeader />
-        <LanguageSwitcher />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
