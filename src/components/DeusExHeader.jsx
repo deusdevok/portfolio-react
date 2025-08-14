@@ -1,10 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useContent } from "../hooks/useContent";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function DeusExHeader() {
   const location = useLocation();
-  const { t } = useTranslation();
+  const { navigation } = useContent();
 
   const isActive = (path) => (location.pathname === path ? "active" : "");
 
@@ -12,19 +12,19 @@ function DeusExHeader() {
     <header className="nav-header">
       <div className="nav-tabs">
         <Link className={`nav-tab ${isActive("/")}`} to="/">
-          {t('navigation.home')}
+          {navigation.home}
         </Link>
         <Link className={`nav-tab ${isActive("/about")}`} to="/about">
-          {t('navigation.about')}
+          {navigation.about}
         </Link>
         <Link className={`nav-tab ${isActive("/skills")}`} to="/skills">
-          {t('navigation.skills')}
+          {navigation.skills}
         </Link>
         <Link className={`nav-tab ${isActive("/projects")}`} to="/projects">
-          {t('navigation.projects')}
+          {navigation.projects}
         </Link>
         <Link className={`nav-tab ${isActive("/contact")}`} to="/contact">
-          {t('navigation.contact')}
+          {navigation.contact}
         </Link>
         
         {/* Language Switcher */}

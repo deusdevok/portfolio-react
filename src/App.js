@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import { useContent } from "./hooks/useContent";
 import DeusExHeader from "./components/DeusExHeader";
 import Home from "./components/pages/Home";
@@ -10,10 +9,9 @@ import Contact from "./components/pages/Contact";
 import Skills from "./components/pages/Skills";
 
 import './styles/deusex.css';
-import './i18n'; // Import i18n configuration
+import './i18n';
 
 function App() {
-  const { t } = useTranslation();
   const { contact, footer } = useContent();
   const { email, linkedin, github } = contact;
   

@@ -11,7 +11,7 @@ function About() {
         {/* Left Column - Description */}
         <div className="about-description">
           <div className="description-card">
-            <h3 className="card-title">PROFILE OVERVIEW</h3>
+            <h3 className="card-title">{about.profileOverview}</h3>
             <div 
               className="description-text"
               dangerouslySetInnerHTML={{ __html: description }}
@@ -23,7 +23,7 @@ function About() {
         <div className="about-details">
           {/* Experience Section */}
           <div className="detail-section">
-            <h3 className="section-subtitle">EXPERIENCE LOG</h3>
+            <h3 className="section-subtitle">{about.experienceLog}</h3>
             <div className="timeline-container">
               {experience.map((exp, index) => (
                 <div key={index} className="timeline-item">
@@ -55,7 +55,7 @@ function About() {
 
           {/* Education Section */}
           <div className="detail-section">
-            <h3 className="section-subtitle">EDUCATION MATRIX</h3>
+            <h3 className="section-subtitle">{about.educationMatrix}</h3>
             <div className="education-grid">
               {education.map((edu, index) => (
                 <div key={index} className="education-card">
@@ -72,7 +72,7 @@ function About() {
 
           {/* Certifications Section */}
           <div className="detail-section">
-            <h3 className="section-subtitle">CERTIFICATION PROTOCOLS</h3>
+            <h3 className="section-subtitle">{about.certificationProtocols}</h3>
             <div className="certifications-grid">
               {certifications.map((cert, index) => (
                 <div key={index} className="certification-card">
