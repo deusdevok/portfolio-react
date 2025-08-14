@@ -103,6 +103,31 @@ body {
     0 5px 10px rgba(0,0,0,.25);
 }
 
+/* Responsive styles for section titles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6em;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-title {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+}
+
 /* ==========================================================================
    NAVIGATION
    ========================================================================== */
@@ -759,7 +784,7 @@ body {
    ========================================================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -806,22 +831,30 @@ body {
   color: #000;
   margin-right: 15px;
   font-size: 1.5em;
+  flex-shrink: 0;
 }
 
 .project-title {
   font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .project-description {
   margin-bottom: 15px;
   line-height: 1.6;
   color: #C0C0C0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .tech-stack {
   margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .tech-tag {
@@ -829,15 +862,16 @@ body {
   background: rgba(0, 191, 255, 0.2);
   border: 1px solid #00BFFF;
   padding: 5px 10px;
-  margin: 2px;
   border-radius: 3px;
   font-size: 0.8em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .project-links {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .project-link {
@@ -850,11 +884,84 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .project-link:hover {
   background: rgba(0, 191, 255, 0.1);
   transform: translateY(-2px);
+}
+
+/* Mobile responsive fixes for projects */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .project-card {
+    padding: 15px;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .project-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .project-title {
+    font-size: 1.1em;
+  }
+  
+  .tech-stack {
+    gap: 3px;
+  }
+  
+  .tech-tag {
+    font-size: 0.75em;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    gap: 15px;
+  }
+  
+  .project-card {
+    padding: 12px;
+  }
+  
+  .project-image {
+    height: 150px;
+  }
+  
+  .project-title {
+    font-size: 1em;
+  }
+  
+  .project-description {
+    font-size: 0.9em;
+  }
+  
+  .tech-tag {
+    font-size: 0.7em;
+    padding: 3px 6px;
+  }
+  
+  .project-link {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
 }
 
 /* ==========================================================================
