@@ -71,6 +71,43 @@ body {
 }
 
 /* ==========================================================================
+   LANGUAGE SWITCHER
+   ========================================================================== */
+   .language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .lang-btn {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #1E90FF;
+    color: #1E90FF;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .lang-btn:hover {
+    background: rgba(30, 144, 255, 0.2);
+    border-color: #00FFFF;
+    color: #00FFFF;
+  }
+  
+  .lang-btn.active {
+    background: rgba(30, 144, 255, 0.3);
+    border-color: #00FFFF;
+    color: #00FFFF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+
+/* ==========================================================================
    LAYOUT COMPONENTS
    ========================================================================== */
 .content-section {

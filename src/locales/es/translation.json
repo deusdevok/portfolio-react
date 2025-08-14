@@ -1,0 +1,191 @@
+{
+    "home": {
+      "title": "Bienvenido a Mi Portafolio",
+      "hero": {
+        "title": "Desarrollador Python",
+        "description": "<p>Desde 2018 he estado trabajando como desarrollador Python.</p><br><p>Con formación en física y pasión por construir soluciones limpias y escalables, he trabajado en proyectos que van desde aplicaciones web hasta scripts de automatización.</p><br><p>Disfruto abordando problemas complejos y entregando código eficiente y mantenible.</p>",
+        "cta": "Ver Mi Trabajo"
+      }
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "description": "<p>Soy un desarrollador backend Python con una sólida base en matemáticas, resolución de problemas y arquitectura de software. He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como Django y FastAPI.</p><br><p>Mi experiencia abarca proyectos freelance, aplicaciones personales y desarrollo colaborativo. Disfruto aprendiendo nuevas tecnologías — desde herramientas frontend modernas como React hasta infraestructura como código con Terraform — y siempre estoy explorando formas de mejorar mi oficio.</p><br><p>Fuera de la programación, me encanta el ajedrez, las trivia y explorar la historia de la ciencia y la tecnología.</p>",
+      "experience": [
+        {
+          "company": "Freelance",
+          "title": "Desarrollador Python",
+          "description": "He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como Django y FastAPI.",
+          "period": "2018 - Presente",
+          "skills": ["Python", "FastAPI", "Flask", "AWS"]
+        },
+        {
+          "company": "Pipol",
+          "title": "Desarrollador Backend",
+          "description": "He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como Django y FastAPI. También usé GraphQL con Strawberry y Graphene.",
+          "period": "2024 - 2025",
+          "skills": ["Python", "FastAPI", "Flask", "GCP", "Docker", "GraphQL"]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Universidad de Buenos Aires",
+          "degree": "Licenciatura en Ciencias Físicas",
+          "description": "He estudiado física en la Universidad de Buenos Aires, donde aprendí sobre los principios fundamentales del universo y cómo aplicarlos a problemas del mundo real.",
+          "period": "2009 - 2017"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect - Associate",
+          "issuer": "Amazon Web Services",
+          "description": "He aprobado el examen AWS Solutions Architect Associate, que es una certificación que demuestra mi capacidad para diseñar e implementar aplicaciones escalables y seguras en la plataforma AWS.",
+          "period": "2024"
+        },
+        {
+          "name": "GraphQL con Python y FastAPI",
+          "issuer": "Udemy",
+          "description": "He aprendido cómo usar GraphQL con Python y FastAPI para construir APIs escalables y eficientes.",
+          "period": "2024"
+        },
+        {
+          "name": "Terraform",
+          "issuer": "Udemy",
+          "description": "He aprendido cómo usar Terraform para implementar y gestionar infraestructura como código.",
+          "period": "2024"
+        }
+      ]
+    },
+    "contact": {
+      "email": "carlosaprado@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/carlosaprado/",
+      "github": "https://github.com/deusdevok"
+    },
+    "skills": [
+      { 
+        "key": "python", 
+        "short": "PY", 
+        "name": "Python", 
+        "years": 7,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        "title": "SUITE DE PROTOCOLO PYTHON",
+        "description": "Aumentaciones de aprendizaje automático y procesamiento de datos instaladas. Capacidad mejorada para desarrollo de algoritmos y análisis automatizado de sistemas.",
+        "details": "Base sólida establecida. El agente demuestra rendimiento confiable en tareas de manipulación de datos y automatización.",
+        "augmentation": "ALGORITMOS DE APRENDIZAJE EN LÍNEA"
+      },
+      { 
+        "key": "databases", 
+        "short": "DB", 
+        "name": "Bases de Datos", 
+        "years": 4,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        "title": "MÓDULO DE INTERFAZ DE BASE DE DATOS",
+        "description": "Sistemas de almacenamiento y recuperación de datos mejorados para gestión óptima de información. Compatibilidad con protocolos SQL y NoSQL lograda.",
+        "details": "Habilidades competentes de arquitectura de datos desarrolladas. Agente capaz de diseñar y mantener sistemas de base de datos eficientes.",
+        "augmentation": "NÚCLEO DE DATOS SINCRONIZADO"
+      },
+      { 
+        "key": "javascript", 
+        "short": "JS", 
+        "name": "JavaScript", 
+        "years": 5,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "title": "DOMINIO DE JAVASCRIPT",
+        "description": "La programación avanzada de interfaz neural permite la manipulación fluida de sistemas basados en web. El agente demuestra excepcional competencia en protocolos ECMAScript y operaciones asíncronas.",
+        "details": "Integración completa del sistema lograda. El agente opera con precisión similar a una máquina en entornos JavaScript.",
+        "augmentation": "AUMENTACIÓN ACTIVA"
+      },
+      { 
+        "key": "react", 
+        "short": "RE", 
+        "name": "React", 
+        "years": 4,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        "title": "MEJORA DE REACT",
+        "description": "La modificación de arquitectura neural basada en componentes permite el despliegue rápido de interfaces de usuario escalables. Protocolos avanzados de hooks y sistemas de gestión de estado completamente integrados.",
+        "details": "Alto nivel de competencia logrado. Agente capaz de construir sistemas reactivos complejos con sobrecarga mínima de recursos.",
+        "augmentation": "ENLACE NEURAL ESTABLECIDO"
+      },
+      {
+        "key": "Docker",
+        "short": "DO",
+        "name": "Docker",
+        "years": 5,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        "title": "MEJORA DE DOCKER",
+        "description": "La implementación del protocolo de contenedores permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
+        "details": "Extensas habilidades de contenedores desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
+        "augmentation": "MATRIZ DOCKER ACTIVA"
+      },
+      {
+        "key": "AWS",
+        "short": "AWS",
+        "name": "AWS",
+        "years": 5,
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        "title": "MEJORA DE AWS",
+        "description": "La integración de plataforma en la nube permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
+        "details": "Extensas habilidades de plataforma en la nube desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
+        "augmentation": "MATRIZ AWS ACTIVA"
+      },
+      {
+        "key": "Terraform",
+        "short": "TF",
+        "name": "Terraform",
+        "years": 1,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+        "title": "MEJORA DE TERRAFORM",
+        "description": "La implementación del protocolo de infraestructura como código permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
+        "details": "Extensas habilidades de infraestructura como código desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
+        "augmentation": "MATRIZ TERRAFORM ACTIVA"
+      },
+      {
+        "key": "Git",
+        "short": "GIT",
+        "name": "Git",
+        "years": 2,
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        "title": "MEJORA DE GIT",
+        "description": "La implementación del protocolo de control de versiones permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
+        "details": "Extensas habilidades de control de versiones desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
+        "augmentation": "MATRIZ GIT ACTIVA"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "API de E-commerce",
+        "description": "Una API RESTful de alto rendimiento para aplicaciones de e-commerce construida con FastAPI",
+        "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
+        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+      },
+      {
+        "id": 2,
+        "title": "Panel de Análisis de Datos",
+        "description": "Aplicación web para visualizar y analizar grandes conjuntos de datos",
+        "technologies": ["Flask", "SQLAlchemy", "Pandas", "Docker", "Redis"],
+        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+      },
+      {
+        "id": 3,
+        "title": "Sistema de Gestión de Contenido",
+        "description": "CMS completo con panel de administración y gestión de usuarios",
+        "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
+        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+      }
+    ],
+    "navigation": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "terminalHeader": "TERMINAL DE PORTAFOLIO v1.0.0",
+      "lastAccess": "Último Acceso",
+      "quickAccess": "Acceso Rápido",
+      "systemStatus": "Estado del Sistema",
+      "online": "EN LÍNEA",
+      "readyForDeployment": "Listo para despliegue"
+    }
+  }

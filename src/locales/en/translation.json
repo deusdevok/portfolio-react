@@ -172,5 +172,20 @@
         "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
         "githubUrl": "https://github.com/yourusername/ecommerce-api"
       }
-    ]
+    ],
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": {
+      "terminalHeader": "PORTFOLIO TERMINAL v1.0.0",
+      "lastAccess": "Last Access",
+      "quickAccess": "Quick Access",
+      "systemStatus": "System Status",
+      "online": "ONLINE",
+      "readyForDeployment": "Ready for deployment"
+    }
   }
