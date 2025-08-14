@@ -2,11 +2,11 @@ import { useContent } from "../../hooks/useContent";
 
 function Contact() {
   const { contact } = useContent();
-  const { email, linkedin, github } = contact;
+  const { email, linkedin, github, contactTitle } = contact;
 
   return (
     <section className="content-section">
-      <h2 className="section-title">Communication Links</h2>
+      <h2 className="section-title">{contactTitle}</h2>
       <div className="contact-grid" style={{ marginBottom: 30 }}>
         <a className="clickable-card" href={`mailto:${email}`}>
         <div className="contact-card">
@@ -17,7 +17,7 @@ function Contact() {
           </div>
           <h3>SECURE MAIL</h3>
           <p style={{ color: '#C0C0C0', margin: '10px 0' }}>{email}</p>
-          <p style={{ color: '#1E90FF' }}>STATUS: ACTIVE</p>
+          <p style={{ color: '#1E90FF' }}>STATUS: {contact.active}</p>
         </div>
         </a>
         <a className="clickable-card" href={linkedin} target="_blank" rel="noopener noreferrer">
@@ -29,7 +29,7 @@ function Contact() {
           </div>
           <h3>PROFESSIONAL NETWORK</h3>
           <p style={{ color: '#C0C0C0', margin: '10px 0' }}>{linkedin}</p>
-          <p style={{ color: '#1E90FF' }}>STATUS: VERIFIED</p>
+          <p style={{ color: '#1E90FF' }}>STATUS: {contact.verified}</p>
         </div>
         </a>
         <a className="clickable-card" href={github} target="_blank" rel="noopener noreferrer">
@@ -41,7 +41,7 @@ function Contact() {
           </div>
           <h3>CODE REPOSITORY</h3>
           <p style={{ color: '#C0C0C0', margin: '10px 0' }}>{github}</p>
-          <p style={{ color: '#1E90FF' }}>STATUS: PUBLIC</p>
+          <p style={{ color: '#1E90FF' }}>STATUS: {contact.public}</p>
         </div>
         </a>
       </div>

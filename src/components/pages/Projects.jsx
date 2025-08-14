@@ -6,9 +6,9 @@ function Projects() {
 
   return (
     <section className="content-section">
-      <h2 className="section-title">Mission Archives</h2>
+      <h2 className="section-title">{projects.projectsTitle}</h2>
       <div className="projects-grid">
-        {projects.map(project => (
+        {projects.projectList.map(project => (
           <div className="project-card" key={project.id}>
             <img className="project-image" src={project.imageUrl || placeholder} alt={`${project.title} preview`} />
             <div className="project-header">

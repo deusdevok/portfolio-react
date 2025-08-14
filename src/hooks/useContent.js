@@ -1,20 +1,34 @@
-import { useState } from 'react';
-import content from '../data/content.json';
+import { useTranslation } from 'react-i18next';
 
 export const useContent = () => {
-  const [data] = useState(content);
+  const { t } = useTranslation();
   
-  // You can add loading states, error handling, etc.
-  // For now, we'll just return the static data
+  // Helper function to get nested translation objects
+  const getTranslationObject = (key) => {
+    try {
+      return t(key, { returnObjects: true });
+    } catch (error) {
+      console.warn(`Translation key "${key}" not found`);
+      return {};
+    }
+  };
   
   return {
-    home: data.home,
-    about: data.about,
-    projects: data.projects,
-    skills: data.skills,
-    contact: data.contact,
+    home: getTranslationObject('home'),
+    about: getTranslationObject('about'),
+    projects: getTranslationObject('projects'),
+    skills: getTranslationObject('skills'),
+    contact: getTranslationObject('contact'),
+    navigation: getTranslationObject('navigation'),
+    footer: getTranslationObject('footer'),
     // Helper functions
-    getProjectById: (id) => data.projects.find(p => p.id === id),
-    getSkills: () => data.about.skills
+    getProjectById: (id) => {
+      const projects = getTranslationObject('projects');
+      return projects.find(p => p.id === id);
+    },
+    getSkills: () => {
+      const about = getTranslationObject('about');
+      return about.skills || [];
+    }
   };
 };

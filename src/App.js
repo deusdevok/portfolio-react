@@ -9,10 +9,12 @@ import Contact from "./components/pages/Contact";
 import Skills from "./components/pages/Skills";
 
 import './styles/deusex.css';
+import './i18n';
 
 function App() {
-  const { contact } = useContent();
+  const { contact, footer } = useContent();
   const { email, linkedin, github } = contact;
+  
   useEffect(() => {
     // global scan-line overlay
     document.body.classList.add('scan-lines');
@@ -46,6 +48,7 @@ function App() {
       cleanup && cleanup();
     };
   }, []);
+  
   return (
     <Router basename="/portfolio-react">
       <div className="container">
@@ -62,19 +65,19 @@ function App() {
         <footer className="terminal-footer">
           <div className="terminal-text">
             <div className="terminal-header">
-              {`> PORTFOLIO TERMINAL v1.0.0`}<br/>
-              {`> Last Access: ${new Date().toLocaleString()}`}<br/>
+              {`> ${footer.terminalHeader}`}<br/>
+              {`> ${footer.lastAccess}: ${new Date().toLocaleString()}`}<br/>
             </div>
             <div className="terminal-links">
-              {`> Quick Access:`}<br/>
+              {`> ${footer.quickAccess}:`}<br/>
               {`> [1] `}<a href={github} target="_blank" rel="noopener noreferrer">GitHub</a><br/>
               {`> [2] `}<a href={linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><br/>
               {`> [3] `}<a href={`mailto:${email}`}>Email</a><br/>
               {`> [4] `}<a href={`${process.env.PUBLIC_URL}/resume.pdf`} download="carlosresume.pdf">Resume</a><br/>
             </div>
             <div className="terminal-status">
-              {`> System Status: ONLINE`}<br/>
-              {`> Ready for deployment `}<span className="cursor">_</span>
+              {`> ${footer.systemStatus}: ${footer.online}`}<br/>
+              {`> ${footer.readyForDeployment} `}<span className="cursor">_</span>
             </div>
           </div>
         </footer>

@@ -31,21 +31,21 @@ function Skills() {
   }, []);
 
   const getExperienceLevel = (years) => {
-    if (years >= 7) return { level: "EXPERT", color: "#00ff00" };
-    if (years >= 5) return { level: "ADVANCED", color: "#00BFFF" };
-    if (years >= 2) return { level: "INTERMEDIATE", color: "#FFD700" };
-    return { level: "BEGINNER", color: "#FF6B6B" };
+    if (years >= 7) return { level: skills.expert, color: "#00ff00" };
+    if (years >= 5) return { level: skills.advanced, color: "#00BFFF" };
+    if (years >= 2) return { level: skills.intermediate, color: "#FFD700" };
+    return { level: skills.beginner, color: "#FF6B6B" };
   };
 
-  const getMaxYears = () => Math.max(...skills.map(s => s.years || 0));
+  const getMaxYears = () => Math.max(...skills.skillsList.map(s => s.years || 0));
 
   return (
     <section className="content-section">
-      <h2 className="section-title">Tech Stack</h2>
+      <h2 className="section-title">{skills.techStack}</h2>
       
       <div className="skills-overview">
         <div className="skills-grid-new">
-          {skills.sort((a, b) => b.years - a.years).map(skill => {
+          {skills.skillsList.sort((a, b) => b.years - a.years).map(skill => {
             const experience = getExperienceLevel(skill.years || 0);
             const maxYears = getMaxYears();
             const progressPercent = ((skill.years || 0) / maxYears) * 100;
