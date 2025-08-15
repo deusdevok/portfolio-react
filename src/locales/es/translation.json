@@ -66,7 +66,10 @@
       "github": "@deusdevok",
       "active": "ACTIVO",
       "verified": "VERIFICADO",
-      "public": "PUBLICO"
+      "public": "PUBLICO",
+      "emailTitle": "CORREO",
+      "linkedinTitle": "LINKEDIN",
+      "githubTitle": "GITHUB"
     },
     "skills": {
       "techStack": "TECNOLOGIAS",
@@ -74,6 +77,7 @@
       "advanced": "AVANZADO",
       "intermediate": "INTERMEDIO",
       "beginner": "PRINCIPIANTE",
+      "years": "AÑOS",
       "skillsList": [
         { 
           "key": "python", 
@@ -173,21 +177,24 @@
         "title": "API de E-commerce",
         "description": "Una API RESTful de alto rendimiento para aplicaciones de e-commerce construida con FastAPI",
         "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
         "id": 2,
         "title": "Panel de Análisis de Datos",
         "description": "Aplicación web para visualizar y analizar grandes conjuntos de datos",
         "technologies": ["Flask", "SQLAlchemy", "Pandas", "Docker", "Redis"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
         "id": 3,
         "title": "Sistema de Gestión de Contenido",
         "description": "CMS completo con panel de administración y gestión de usuarios",
         "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       }
     ]
   },

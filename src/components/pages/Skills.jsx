@@ -79,7 +79,6 @@ function Skills() {
                 
                 <div className="experience-display">
                   <div className="years-number">{skill.years || 0}</div>
-                  <div className="years-label">YEARS</div>
                 </div>
                 
                 <div className="experience-timeline">
@@ -91,10 +90,6 @@ function Skills() {
                         backgroundColor: experience.color 
                       }}
                     />
-                  </div>
-                  <div className="timeline-scale">
-                    <span>0</span>
-                    <span>{maxYears}</span>
                   </div>
                 </div>
                 

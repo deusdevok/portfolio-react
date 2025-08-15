@@ -783,6 +783,7 @@ body {
 }
 
 .years-number {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 3em;
   font-weight: 900;
   color: #00BFFF;

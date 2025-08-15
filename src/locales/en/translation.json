@@ -66,7 +66,10 @@
       "github": "@deusdevok",
       "active": "ACTIVE",
       "verified": "VERIFIED",
-      "public": "PUBLIC"
+      "public": "PUBLIC",
+      "emailTitle": "SECURE MAIL",
+      "linkedinTitle": "PROFESSIONAL NETWORK",
+      "githubTitle": "CODE REPOSITORY"
     },
     "skills": {
       "techStack": "TECH STACK",
@@ -74,6 +77,7 @@
       "advanced": "ADVANCED",
       "intermediate": "INTERMEDIATE",
       "beginner": "BEGGINER",
+      "years": "YEARS",
       "skillsList": [
         { 
           "key": "python", 
@@ -173,21 +177,24 @@
         "title": "E-commerce API",
         "description": "A high-performance RESTful API for e-commerce applications built with FastAPI",
         "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
         "id": 2,
         "title": "Data Analytics Dashboard",
         "description": "Web application for visualizing and analyzing large datasets",
         "technologies": ["Flask", "SQLAlchemy", "Pandas", "Docker", "Redis"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
         "id": 3,
         "title": "Content Management System",
         "description": "Full featured CMS with admin panel and user management",
         "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api"
+        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       }
     ]
   },
