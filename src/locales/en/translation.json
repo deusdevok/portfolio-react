@@ -5,59 +5,105 @@
       "name": "Carlos",
       "activeSince": "ACTIVE SINCE: 2018",
       "cta": "View My Work",
-      "description": "<p>Since 2018 I've been working as a Python developer.</p><br><p>With a background in physics and a passion for building clean, scalable solutions, I've worked on projects ranging from web applications to automation scripts.</p><br><p>I enjoy tackling complex problems and delivering efficient, maintainable code.</p>"
+      "description": "<p>Since 2018 I've been working as a Python developer.</p><br><p>With a background in Physics and a passion for building clean, scalable solutions, I've worked on projects ranging from web applications to automation scripts (among others).</p><br><p>I enjoy tackling complex problems and delivering efficient, maintainable code.</p>"
     },
     "about": {
       "title": "About Me",
-      "profileOverview": "PROFILE OVERVIEW",
-      "experienceLog": "EXPERIENCE LOG",
-      "educationMatrix": "EDUCATION MATRIX",
-      "certificationProtocols": "CERTIFICATION PROTOCOLS",
-      "description": "<p>I'm a Python backend developer with a strong foundation in mathematics, problem-solving, and software architecture. I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.</p><br><p>My experience spans freelance projects, personal applications, and collaborative development. I enjoy learning new technologies — from modern frontend tools like React to infrastructure-as-code with Terraform — and I'm always exploring ways to improve my craft.</p><br><p>Outside of coding, I love chess, trivia, and exploring the history of science and technology.</p>",
+      "profileOverview": "OVERVIEW",
+      "experienceLog": "EXPERIENCE",
+      "educationMatrix": "EDUCATION",
+      "certificationProtocols": "CERTIFICATION",
+      "description": "<p>I'm a Python developer with a strong foundation in Physics, problem-solving, and software architecture. I specialize in Backend development. I've built APIs, data processing pipelines, and automation tools, working with frameworks like FastAPI, Flask and Django.</p><br><p>My experience spans freelance projects, personal applications, and collaborative development. I enjoy learning new technologies — from modern frontend tools like React to infrastructure-as-code with Terraform — and I'm always exploring ways to improve my craft.</p><br><p>Outside of coding, I love chess, reading, movies, music, and more.</p>",
       "experience": [
-        {
-          "company": "Freelance",
-          "title": "Python Developer",
-          "description": "I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI.",
-          "period": "2018 - Present",
-          "skills": ["Python", "FastAPI", "Flask", "AWS"]
-        },
         {
           "company": "Pipol",
           "title": "Backend Developer",
-          "description": "I've built APIs, data processing pipelines, and automation tools, working with frameworks like Django and FastAPI. I also used GraphQL with Strawberry and Graphene.",
+          "description": "Company specialized in media. I worked on migrating code from Flask to FastAPI, improving performance. I transformed a REST-based API into GraphQL using Strawberry, optimized communication with the frontend, managed data synchronization in BigQuery, implemented monitoring and logging in GCP, and provided technical support and collaboration with the frontend team.",
           "period": "2024 - 2025",
-          "skills": ["Python", "FastAPI", "Flask", "GCP", "Docker", "GraphQL"]
+          "skills": ["Python", "FastAPI", "Flask", "GraphQL", "Strawberry", "BigQuery", "GCP", "Docker"]
+        },
+        {
+          "company": "DocAI",
+          "title": "Backend Developer & DevOps Engineer",
+          "description": "I developed an API for a Content Management System (CMS) that uses AI to analyze PDF documents. I implemented FastAPI with PostgreSQL for scalability, integrated AWS S3 for file storage, deployed the application on EC2, and used pgvector for content-based searches.",
+          "period": "2024",
+          "skills": ["Python", "FastAPI", "PostgreSQL", "AWS S3", "EC2", "pgvector", "Docker"]
+        },
+        {
+          "company": "Diamond Rock",
+          "title": "Backend Developer",
+          "description": "I developed a REST API in FastAPI for a content search app based on proximity to the user. I implemented FastAPI with Prisma ORM and used the H3 library to efficiently calculate distances.",
+          "period": "2023",
+          "skills": ["Python", "FastAPI", "Prisma ORM", "H3"]
+        },
+        {
+          "company": "Plotly",
+          "title": "MATLAB Developer",
+          "description": "I developed the MATLAB implementation of the Plotly library (Python). My main task on this project was to build a MATLAB solution from scratch, implementing different functionalities and examples.",
+          "period": "2021",
+          "skills": ["MATLAB", "Python", "Plotly", "Git"]
+        },
+        {
+          "company": "New Iron",
+          "title": "Web Developer",
+          "description": "I worked as a web developer for New Iron, a furniture company. My work consisted of the complete process, from design, through implementation and publishing the site online.",
+          "period": "2012-2015",
+          "skills": ["HTML", "CSS", "PHP"]
+        },
+        {
+          "company": "Freelance",
+          "title": "Python Developer",
+          "description": "I worked on various Python-related projects for clients worldwide. My work included backend API development with FastAPI, Flask, and Django; data science tasks using libraries like Numpy, Pandas, and Seaborn; scraping and data collection with BeautifulSoup, Selenium, and Scrapy; and machine learning projects using scikit-learn, Keras, and TensorFlow.",
+          "period": "2018 - 2024",
+          "skills": ["Python", "FastAPI", "Flask", "Django", "NumPy", "Pandas", "Seaborn", "BeautifulSoup", "Selenium", "Scrapy", "scikit-learn", "Keras", "TensorFlow"]
         }
       ],
       "education": [
         {
           "institution": "Universidad de Buenos Aires",
           "degree": "Bachelor of Science in Physics",
-          "description": "I've studied physics at the University of Buenos Aires, where I learned about the fundamental principles of the universe and how to apply them to real-world problems.",
+          "description": "I've studied Physics at the University of Buenos Aires, where I learned about the fundamental principles of the universe and how to apply them to real-world problems.",
           "period": "2009 - 2017"
         }
       ],
       "certifications": [
         {
-          "name": "AWS Certified Solutions Architect - Associate",
-          "issuer": "Amazon Web Services",
-          "description": "I've passed the AWS Solutions Architect Associate exam, which is a certification that proves my ability to design and deploy scalable and secure applications on the AWS platform.",
-          "period": "2024"
+          "name": "The Complete SQL Bootcamp",
+          "issuer": "Udemy",
+          "description": "Comprehensive training in SQL fundamentals, including querying, joins, aggregations, window functions, and database design using PostgreSQL.",
+          "period": "2025"
         },
         {
-          "name": "GraphQL with Python and FastAPI",
+          "name": "Git and Github",
           "issuer": "Udemy",
-          "description": "I've learned how to use GraphQL with Python and FastAPI to build scalable and efficient APIs.",
-          "period": "2024"
+          "description": "Practical course covering version control workflows, branching strategies, pull requests, and collaboration using Git and GitHub.",
+          "period": "2025"
         },
         {
           "name": "Terraform",
           "issuer": "Udemy",
-          "description": "I've learned how to use Terraform to deploy and manage infrastructure as code.",
+          "description": "Hands-on introduction to Infrastructure as Code with Terraform, covering resource provisioning, state management, and modular configurations on cloud providers.",
+          "period": "2025"
+        },
+        {
+          "name": "GraphQL with Python",
+          "issuer": "Udemy",
+          "description": "Focused on building GraphQL APIs with Python, including schema design, queries, mutations, subscriptions, and integration with databases.",
+          "period": "2024"
+        },
+        {
+          "name": "Concurrent and Parallel Programming in Python",
+          "issuer": "Udemy",
+          "description": "In-depth training on Python concurrency using threading, multiprocessing, and async/await to build efficient and scalable applications.",
+          "period": "2024"
+        },
+        {
+          "name": "Microservices Architecture",
+          "issuer": "Udemy",
+          "description": "Covers microservices principles, communication patterns, service deployment, and containerization, with a focus on building distributed systems.",
           "period": "2024"
         }
-      ]
+      ]      
     },
     "contact": {
       "contactTitle": "Communications Link",
@@ -85,10 +131,7 @@
           "name": "Python", 
           "years": 7,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-          "title": "PYTHON PROTOCOL SUITE",
-          "description": "Machine learning and data processing augmentations installed. Enhanced capability for algorithm development and automated system analysis.",
-          "details": "Solid foundation established. Agent demonstrates reliable performance in data manipulation and automation tasks.",
-          "augmentation": "LEARNING ALGORITHMS ONLINE"
+          "description": "Extensive experience building backend services, APIs, automation tools, and data processing pipelines using Python and its ecosystem."
         },
         { 
           "key": "databases", 
@@ -96,10 +139,7 @@
           "name": "Databases", 
           "years": 4,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-          "title": "DATABASE INTERFACE MODULE",
-          "description": "Data storage and retrieval systems enhanced for optimal information management. SQL and NoSQL protocol compatibility achieved.",
-          "details": "Competent data architecture skills developed. Agent capable of designing and maintaining efficient database systems.",
-          "augmentation": "DATA CORE SYNCHRONIZED"
+          "description": "Proficient in relational database design, querying, optimization, and ORM integration, mainly with PostgreSQL."
         },
         { 
           "key": "javascript", 
@@ -107,21 +147,15 @@
           "name": "JavaScript", 
           "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-          "title": "JAVASCRIPT MASTERY",
-          "description": "Advanced neural interface programming allows for seamless manipulation of web-based systems. The agent demonstrates exceptional proficiency in ECMAScript protocols and asynchronous operations.",
-          "details": "Complete system integration achieved. Agent operates with machine-like precision in JavaScript environments.",
-          "augmentation": "AUGMENTATION ACTIVE"
+          "description": "Experience building interactive frontends and integrating APIs, with a focus on modern ES6+ features."
         },
         { 
           "key": "react", 
           "short": "RE", 
           "name": "React", 
-          "years": 4,
+          "years": 2,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-          "title": "REACT ENHANCEMENT",
-          "description": "Component-based neural architecture modification enables rapid deployment of scalable user interfaces. Advanced hook protocols and state management systems fully integrated.",
-          "details": "High-level proficiency achieved. Agent capable of constructing complex reactive systems with minimal resource overhead.",
-          "augmentation": "NEURAL LINK ESTABLISHED"
+          "description": "Skilled in creating responsive and component-based user interfaces, with state management and API-driven frontends."
         },
         {
           "key": "Docker",
@@ -129,21 +163,15 @@
           "name": "Docker",
           "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-          "title": "DOCKER ENHANCEMENT",
-          "description": "Containerization protocol implementation allows for seamless deployment of scalable applications. Advanced orchestration and networking capabilities fully integrated.",
-          "details": "Extensive containerization skills developed. Agent capable of deploying and managing complex application environments.",
-          "augmentation": "DOCKER MATRIX ACTIVE"
+          "description": "Experienced in containerizing applications, managing development environments, and deploying services using Docker."
         },
         {
           "key": "AWS",
           "short": "AWS",
           "name": "AWS",
-          "years": 5,
+          "years": 4,
           "icon": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-          "title": "AWS ENHANCEMENT",
-          "description": "Cloud platform integration allows for seamless deployment of scalable applications. Advanced orchestration and networking capabilities fully integrated.",
-          "details": "Extensive cloud platform skills developed. Agent capable of deploying and managing complex application environments.",
-          "augmentation": "AWS MATRIX ACTIVE"
+          "description": "Hands-on experience deploying and managing applications in AWS, including EC2, RDS, S3, and IAM configurations."
         },
         {
           "key": "Terraform",
@@ -151,23 +179,17 @@
           "name": "Terraform",
           "years": 1,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
-          "title": "TERRAFORM ENHANCEMENT",
-          "description": "Infrastructure as code protocol implementation allows for seamless deployment of scalable applications. Advanced orchestration and networking capabilities fully integrated.",
-          "details": "Extensive infrastructure as code skills developed. Agent capable of deploying and managing complex application environments.",
-          "augmentation": "TERRAFORM MATRIX ACTIVE"
+          "description": "Practical knowledge of Infrastructure as Code with Terraform, automating cloud resource provisioning and configuration."
         },
         {
           "key": "Git",
           "short": "GIT",
           "name": "Git",
-          "years": 2,
+          "years": 4,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-          "title": "GIT ENHANCEMENT",
-          "description": "Version control protocol implementation allows for seamless deployment of scalable applications. Advanced orchestration and networking capabilities fully integrated.",
-          "details": "Extensive version control skills developed. Agent capable of deploying and managing complex application environments.",
-          "augmentation": "GIT MATRIX ACTIVE"
+          "description": "Proficient with version control workflows, branching strategies, and collaborative development using Git and GitHub."
         }
-      ]
+      ]      
     },
     "projects": {
       "projectsTitle": "Mission Archives",
