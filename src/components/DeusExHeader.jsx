@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useContent } from "../hooks/useContent";
 import LanguageSwitcher from "./LanguageSwitcher";
+import BurgerMenu from "./BurgerMenu";
 
 function DeusExHeader() {
   const location = useLocation();
@@ -10,7 +11,8 @@ function DeusExHeader() {
 
   return (
     <header className="nav-header">
-      <div className="nav-tabs">
+      {/* Desktop Navigation */}
+      <div className="nav-tabs desktop-nav">
         <Link className={`nav-tab ${isActive("/")}`} to="/">
           {navigation.home}
         </Link>
@@ -27,8 +29,13 @@ function DeusExHeader() {
           {navigation.contact}
         </Link>
         
-        {/* Language Switcher */}
+        {/* Desktop Language Switcher */}
         <LanguageSwitcher />
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="mobile-nav-container">
+        <BurgerMenu />
       </div>
     </header>
   );
