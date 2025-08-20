@@ -16,7 +16,7 @@ function Home() {
       <div className="about-content" style={{ marginTop: 20 }}>
       <div className="profile-panel">
           <div className="profile-avatar">
-            <img className="profile-avatar-img" src={`${process.env.PUBLIC_URL}/avatar.jpeg`} alt="Carlos" />
+            <img className="profile-avatar-img" src={`${process.env.PUBLIC_URL}/avatar.jpg`} alt="Carlos" />
           </div>
           <h3>CARLOS</h3>
           <p style={{ color: '#1E90FF', margin: '10px 0' }}>{home.heroTitle}</p>
@@ -26,6 +26,7 @@ function Home() {
         </div>
         <div className="home-panel">
           <div className="home-text" dangerouslySetInnerHTML={{ __html: home.description }} />
+          <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download="carlosresume.pdf" className="project-link">↓ Resume</a>
         </div>
       </div>
     </section>
