@@ -1,5 +1,7 @@
 # Portfolio React
 
+![portfolio preview screenshot](portfolioimg.jpg "preview")
+
 A simple portfolio website built with React and hosted on GitHub Pages.
 
 ## Live Demo

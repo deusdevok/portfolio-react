@@ -196,18 +196,18 @@
       "projectList": [
       {
         "id": 1,
-        "title": "E-commerce API",
-        "description": "A high-performance RESTful API for e-commerce applications built with FastAPI",
-        "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api",
-        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
+        "title": "Portfolio Website",
+        "description": "This website. A portfolio made with React and GitHub Pages.",
+        "technologies": ["React", "npm"],
+        "githubUrl": "https://github.com/deusdevok/portfolio-react",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/portfolio-react/master/portfolioimg.jpg"
       },
       {
         "id": 2,
-        "title": "Data Analytics Dashboard",
-        "description": "Web application for visualizing and analyzing large datasets",
-        "technologies": ["Flask", "SQLAlchemy", "Pandas", "Docker", "Redis"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "title": "Flashcards App",
+        "description": "A flashcards app made with Django and React. It has both a backend and a frontend. Both are connected and developed using Docker",
+        "technologies": ["Django", "Django Rest Framework", "Docker", "React"],
+        "githubUrl": "https://github.com/deusdevok/flashcards-app",
         "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
