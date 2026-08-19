@@ -704,6 +704,14 @@ body {
   text-transform: uppercase;
 }
 
+.timeline-company-description {
+  color: #7A8A99;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
 .timeline-description {
   color: #A8A8A8;
   line-height: 1.6;

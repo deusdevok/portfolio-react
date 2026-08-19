@@ -34,6 +34,9 @@ function About() {
                       <span className="timeline-period">{exp.period}</span>
                     </div>
                     <div className="timeline-company">{exp.company}</div>
+                    {exp.companyDescription && (
+                      <p className="timeline-company-description">{exp.companyDescription}</p>
+                    )}
                     <p className="timeline-description">{exp.description}</p>
                     {exp.skills && exp.skills.length > 0 && (
                       <div className="timeline-skills">
