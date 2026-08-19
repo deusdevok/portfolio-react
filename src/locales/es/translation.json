@@ -1,11 +1,11 @@
 {
     "home": {
-      "mainTitle": "Carlos - Desarrollador Python",
-      "heroTitle": "Desarrollador Python",
+      "mainTitle": "Carlos - Desarrollador de Software",
+      "heroTitle": "Desarrollador de Software",
       "name": "Carlos",
       "activeSince": "ACTIVO DESDE: 2018",
       "cta": "Ver Mi Trabajo",
-      "description": "<p>Desde 2018 he estado trabajando como desarrollador Python.</p><br><p>Con formación en física y pasión por construir soluciones limpias y escalables, he trabajado en proyectos que van desde aplicaciones web hasta scripts de automatización.</p><br><p>Disfruto abordando problemas complejos y entregando código eficiente y mantenible.</p>"
+      "description": "<p>Desde 2018 he estado trabajando como desarrollador de software, siendo Python mi lenguaje de preferencia.</p><br><p>Con formación en Física y pasión por construir soluciones limpias y escalables, he trabajado en proyectos que van desde aplicaciones web hasta scripts de automatización (entre muchos otros).</p><br><p>Disfruto abordando problemas complejos y entregando código eficiente y mantenible.</p>"
     },
     "about": {
       "title": "Sobre Mí",
@@ -13,21 +13,78 @@
       "experienceLog": "EXPERIENCIA",
       "educationMatrix": "EDUCACION",
       "certificationProtocols": "CERTIFICACIONES",
-      "description": "<p>Soy un desarrollador backend Python con una sólida base en matemáticas, resolución de problemas y arquitectura de software. He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como Django y FastAPI.</p><br><p>Mi experiencia abarca proyectos freelance, aplicaciones personales y desarrollo colaborativo. Disfruto aprendiendo nuevas tecnologías — desde herramientas frontend modernas como React hasta infraestructura como código con Terraform — y siempre estoy explorando formas de mejorar mi oficio.</p><br><p>Fuera de la programación, me encanta el ajedrez, las trivia y explorar la historia de la ciencia y la tecnología.</p>",
+      "description": "<p>Soy un desarrollador de software con una sólida base en Física, resolución de problemas y arquitectura de software. Me especializo en desarrollo Backend. He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como FastAPI, Flask y Django.</p><p>Mi experiencia abarca proyectos freelance, aplicaciones personales, y sector público y privado. Disfruto aprendiendo nuevas tecnologías, desde herramientas frontend modernas como React hasta infraestructura como código con Terraform, y siempre estoy explorando formas de mejorar mi oficio.</p><p>Fuera de la programación, me encanta el ajedrez, la lectura, las películas, la música, y más.</p>",
       "experience": [
         {
-          "company": "Freelance",
-          "title": "Desarrollador Python",
-          "description": "He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como Django y FastAPI.",
-          "period": "2018 - Presente",
-          "skills": ["Python", "FastAPI", "Flask", "AWS"]
+          "company": "Flexibility",
+          "title": "Desarrollador Backend",
+          "companyDescription": "Empresa especializada en tecnología para comercio internacional y aduanas.",
+          "description": "Diseño y desarrollo APIs REST seguras y mecanismos de autenticación para plataformas de comercio internacional y aduanas. Colaboro en decisiones de arquitectura, revisiones de código y documentación técnica, trabajando con Python, FastAPI, MySQL, Docker y Grafana.",
+          "period": "2026 - Presente",
+          "skills": ["Python", "FastAPI", "MySQL", "Docker", "Grafana"]
+        },
+        {
+          "company": "Realistic AI",
+          "title": "Ingeniero de Machine Learning",
+          "companyDescription": "Empresa de IA que desarrolla soluciones de automatización para la industria petrolera.",
+          "description": "Desarrollé servicios backend en FastAPI para automatización industrial impulsada por IA, procesando grandes conjuntos de datos con Pandas para flujos de trabajo de la industria petrolera. Integré plataformas externas mediante webhooks e implementé pruebas automatizadas con pytest.",
+          "period": "2026",
+          "skills": ["Python", "FastAPI", "Pandas", "pytest"]
+        },
+        {
+          "company": "SpeedAI",
+          "title": "Desarrollador Backend",
+          "companyDescription": "Empresa especializada en plataformas de tecnología para el sector salud.",
+          "description": "Desarrollé funcionalidades backend para una plataforma de salud, incluyendo pipelines de procesamiento de datos que transformaban conjuntos de datos CSV en reportes EDI 834 estandarizados. También mantuve sistemas en producción y resolví defectos de la aplicación.",
+          "period": "2025",
+          "skills": ["Python", "Data Pipelines", "EDI 834"]
+        },
+        {
+          "company": "Marquis Data",
+          "title": "Desarrollador Backend y de Bases de Datos",
+          "description": "Desarrollé funcionalidades backend usando Django REST Framework, extendí vistas y procedimientos almacenados de SQL Server, y mantuve y mejoré aplicaciones empresariales existentes.",
+          "period": "2025",
+          "skills": ["Python", "Django", "Django REST Framework", "SQL Server"]
         },
         {
           "company": "Pipol",
           "title": "Desarrollador Backend",
-          "description": "He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como Django y FastAPI. También usé GraphQL con Strawberry y Graphene.",
+          "companyDescription": "Empresa especializada en medios.",
+          "description": "Trabajé en la migración de código de Flask a FastAPI, mejorando el rendimiento. Transformé una API basada en REST a GraphQL usando Strawberry, optimicé la comunicación con el frontend, gestioné la sincronización de datos en BigQuery, implementé monitoreo y logging en GCP, y brindé soporte técnico y colaboración con el equipo de frontend.",
           "period": "2024 - 2025",
-          "skills": ["Python", "FastAPI", "Flask", "GCP", "Docker", "GraphQL"]
+          "skills": ["Python", "FastAPI", "Flask", "GraphQL", "Strawberry", "BigQuery", "GCP", "Docker"]
+        },
+        {
+          "company": "DocAI",
+          "title": "Desarrollador Backend e Ingeniero DevOps",
+          "companyDescription": "Plataforma de gestión documental impulsada por IA.",
+          "description": "Desarrollé una API para un Sistema de Gestión de Contenidos (CMS) que utiliza IA para analizar documentos PDF. Implementé FastAPI con PostgreSQL para escalabilidad, integré AWS S3 para almacenamiento de archivos, desplegué la aplicación en EC2 y utilicé pgvector para búsquedas basadas en contenido.",
+          "period": "2024",
+          "skills": ["Python", "FastAPI", "PostgreSQL", "AWS S3", "EC2", "pgvector", "Docker"]
+        },
+        {
+          "company": "Diamond Rock",
+          "title": "Desarrollador Backend",
+          "companyDescription": "Empresa especializada en aplicaciones de búsqueda por proximidad y basadas en ubicación.",
+          "description": "Desarrollé una API REST en FastAPI para una aplicación de búsqueda de contenido basada en la proximidad del usuario. Implementé FastAPI con Prisma ORM y utilicé la librería H3 para calcular distancias de manera eficiente.",
+          "period": "2023 - 2024",
+          "skills": ["Python", "FastAPI", "Prisma ORM", "H3"]
+        },
+        {
+          "company": "Plotly",
+          "title": "Desarrollador MATLAB",
+          "companyDescription": "Empresa creadora de la librería de visualización de datos Plotly y el framework Dash.",
+          "description": "Desarrollé la implementación en MATLAB de la librería Plotly (Python). Mi tarea principal en este proyecto fue construir una solución en MATLAB desde cero, implementando distintas funcionalidades y ejemplos.",
+          "period": "2021",
+          "skills": ["MATLAB", "Python", "Plotly", "Git"]
+        },
+        {
+          "company": "New Iron",
+          "title": "Desarrollador Web",
+          "companyDescription": "Empresa de muebles.",
+          "description": "Trabajé como desarrollador web para New Iron, encargándome del proceso completo, desde el diseño hasta la implementación y publicación del sitio en línea.",
+          "period": "2012-2015",
+          "skills": ["HTML", "CSS", "PHP"]
         }
       ],
       "education": [
@@ -36,40 +93,64 @@
           "degree": "Licenciatura en Ciencias Físicas",
           "description": "He estudiado física en la Universidad de Buenos Aires, donde aprendí sobre los principios fundamentales del universo y cómo aplicarlos a problemas del mundo real.",
           "period": "2009 - 2017"
+        },
+        {
+          "institution": "Universidad de Buenos Aires",
+          "degree": "Licenciatura en Ciencias de la Computación (En Curso)",
+          "description": "Actualmente estoy cursando una segunda carrera en Ciencias de la Computación en la Universidad de Buenos Aires, complementando mi formación en Física y mi experiencia profesional en desarrollo de software.",
+          "period": "En Curso"
         }
       ],
       "certifications": [
         {
-          "name": "AWS Certified Solutions Architect - Associate",
-          "issuer": "Amazon Web Services",
-          "description": "He aprobado el examen AWS Solutions Architect Associate, que es una certificación que demuestra mi capacidad para diseñar e implementar aplicaciones escalables y seguras en la plataforma AWS.",
-          "period": "2024"
+          "name": "The Complete SQL Bootcamp",
+          "issuer": "Udemy",
+          "description": "Entrenamiento integral en los fundamentos de SQL, incluyendo consultas, joins, agregaciones, funciones de ventana y diseño de bases de datos usando PostgreSQL.",
+          "period": "2025"
         },
         {
-          "name": "GraphQL con Python y FastAPI",
+          "name": "Git and Github",
           "issuer": "Udemy",
-          "description": "He aprendido cómo usar GraphQL con Python y FastAPI para construir APIs escalables y eficientes.",
-          "period": "2024"
+          "description": "Curso práctico que cubre flujos de trabajo de control de versiones, estrategias de branching, pull requests y colaboración usando Git y GitHub.",
+          "period": "2025"
         },
         {
           "name": "Terraform",
           "issuer": "Udemy",
-          "description": "He aprendido cómo usar Terraform para implementar y gestionar infraestructura como código.",
+          "description": "Introducción práctica a la infraestructura como código con Terraform, cubriendo el aprovisionamiento de recursos, la gestión de estado y configuraciones modulares en proveedores de nube.",
+          "period": "2025"
+        },
+        {
+          "name": "GraphQL with Python",
+          "issuer": "Udemy",
+          "description": "Enfocado en la construcción de APIs GraphQL con Python, incluyendo diseño de esquemas, queries, mutations, subscriptions e integración con bases de datos.",
+          "period": "2024"
+        },
+        {
+          "name": "Concurrent and Parallel Programming in Python",
+          "issuer": "Udemy",
+          "description": "Entrenamiento profundo sobre concurrencia en Python usando threading, multiprocessing y async/await para construir aplicaciones eficientes y escalables.",
+          "period": "2024"
+        },
+        {
+          "name": "Microservices Architecture",
+          "issuer": "Udemy",
+          "description": "Cubre los principios de microservicios, patrones de comunicación, despliegue de servicios y containerización, con foco en la construcción de sistemas distribuidos.",
           "period": "2024"
         }
       ]
     },
     "contact": {
-      "contactTitle": "Contacto",
+      "contactTitle": "Enlace de Comunicaciones",
       "email": "carlosaprado@gmail.com",
       "linkedin": "/in/carlosaprado/",
       "github": "@deusdevok",
       "active": "ACTIVO",
       "verified": "VERIFICADO",
-      "public": "PUBLICO",
-      "emailTitle": "CORREO",
-      "linkedinTitle": "LINKEDIN",
-      "githubTitle": "GITHUB"
+      "public": "PÚBLICO",
+      "emailTitle": "CORREO SEGURO",
+      "linkedinTitle": "RED PROFESIONAL",
+      "githubTitle": "REPOSITORIO DE CÓDIGO"
     },
     "skills": {
       "techStack": "TECNOLOGIAS",
@@ -79,49 +160,37 @@
       "beginner": "PRINCIPIANTE",
       "years": "AÑOS",
       "skillsList": [
-        { 
-          "key": "python", 
-          "short": "PY", 
-          "name": "Python", 
+        {
+          "key": "python",
+          "short": "PY",
+          "name": "Python",
           "years": 7,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-          "title": "SUITE DE PROTOCOLO PYTHON",
-          "description": "Aumentaciones de aprendizaje automático y procesamiento de datos instaladas. Capacidad mejorada para desarrollo de algoritmos y análisis automatizado de sistemas.",
-          "details": "Base sólida establecida. El agente demuestra rendimiento confiable en tareas de manipulación de datos y automatización.",
-          "augmentation": "ALGORITMOS DE APRENDIZAJE EN LÍNEA"
+          "description": "Amplia experiencia construyendo servicios backend, APIs, herramientas de automatización y pipelines de procesamiento de datos usando Python y su ecosistema."
         },
-        { 
-          "key": "databases", 
-          "short": "DB", 
-          "name": "Bases de Datos", 
+        {
+          "key": "databases",
+          "short": "DB",
+          "name": "Bases de Datos",
           "years": 4,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-          "title": "MÓDULO DE INTERFAZ DE BASE DE DATOS",
-          "description": "Sistemas de almacenamiento y recuperación de datos mejorados para gestión óptima de información. Compatibilidad con protocolos SQL y NoSQL lograda.",
-          "details": "Habilidades competentes de arquitectura de datos desarrolladas. Agente capaz de diseñar y mantener sistemas de base de datos eficientes.",
-          "augmentation": "NÚCLEO DE DATOS SINCRONIZADO"
+          "description": "Competente en diseño de bases de datos relacionales, consultas, optimización e integración de ORMs, principalmente con PostgreSQL."
         },
-        { 
-          "key": "javascript", 
-          "short": "JS", 
-          "name": "JavaScript", 
+        {
+          "key": "javascript",
+          "short": "JS",
+          "name": "JavaScript",
           "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-          "title": "DOMINIO DE JAVASCRIPT",
-          "description": "La programación avanzada de interfaz neural permite la manipulación fluida de sistemas basados en web. El agente demuestra excepcional competencia en protocolos ECMAScript y operaciones asíncronas.",
-          "details": "Integración completa del sistema lograda. El agente opera con precisión similar a una máquina en entornos JavaScript.",
-          "augmentation": "AUMENTACIÓN ACTIVA"
+          "description": "Experiencia construyendo frontends interactivos e integrando APIs, con foco en características modernas de ES6+."
         },
-        { 
-          "key": "react", 
-          "short": "RE", 
-          "name": "React", 
-          "years": 4,
+        {
+          "key": "react",
+          "short": "RE",
+          "name": "React",
+          "years": 2,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-          "title": "MEJORA DE REACT",
-          "description": "La modificación de arquitectura neural basada en componentes permite el despliegue rápido de interfaces de usuario escalables. Protocolos avanzados de hooks y sistemas de gestión de estado completamente integrados.",
-          "details": "Alto nivel de competencia logrado. Agente capaz de construir sistemas reactivos complejos con sobrecarga mínima de recursos.",
-          "augmentation": "ENLACE NEURAL ESTABLECIDO"
+          "description": "Hábil en la creación de interfaces de usuario responsivas y basadas en componentes, con gestión de estado y frontends impulsados por APIs."
         },
         {
           "key": "Docker",
@@ -129,21 +198,15 @@
           "name": "Docker",
           "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-          "title": "MEJORA DE DOCKER",
-          "description": "La implementación del protocolo de contenedores permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
-          "details": "Extensas habilidades de contenedores desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
-          "augmentation": "MATRIZ DOCKER ACTIVA"
+          "description": "Experiencia containerizando aplicaciones, gestionando entornos de desarrollo y desplegando servicios usando Docker."
         },
         {
           "key": "AWS",
           "short": "AWS",
           "name": "AWS",
-          "years": 5,
+          "years": 4,
           "icon": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-          "title": "MEJORA DE AWS",
-          "description": "La integración de plataforma en la nube permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
-          "details": "Extensas habilidades de plataforma en la nube desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
-          "augmentation": "MATRIZ AWS ACTIVA"
+          "description": "Experiencia práctica desplegando y gestionando aplicaciones en AWS, incluyendo configuraciones de EC2, RDS, S3 e IAM."
         },
         {
           "key": "Terraform",
@@ -151,47 +214,41 @@
           "name": "Terraform",
           "years": 1,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
-          "title": "MEJORA DE TERRAFORM",
-          "description": "La implementación del protocolo de infraestructura como código permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
-          "details": "Extensas habilidades de infraestructura como código desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
-          "augmentation": "MATRIZ TERRAFORM ACTIVA"
+          "description": "Conocimiento práctico de infraestructura como código con Terraform, automatizando el aprovisionamiento y configuración de recursos en la nube."
         },
         {
           "key": "Git",
           "short": "GIT",
           "name": "Git",
-          "years": 2,
+          "years": 4,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-          "title": "MEJORA DE GIT",
-          "description": "La implementación del protocolo de control de versiones permite el despliegue fluido de aplicaciones escalables. Capacidades avanzadas de orquestación y redes completamente integradas.",
-          "details": "Extensas habilidades de control de versiones desarrolladas. Agente capaz de desplegar y gestionar entornos de aplicaciones complejas.",
-          "augmentation": "MATRIZ GIT ACTIVA"
+          "description": "Competente en flujos de trabajo de control de versiones, estrategias de branching y desarrollo colaborativo usando Git y GitHub."
         }
       ]
     },
     "projects": {
-      "projectsTitle": "Proyectos",
+      "projectsTitle": "Archivos de Misión",
       "projectList": [
       {
         "id": 1,
-        "title": "API de E-commerce",
-        "description": "Una API RESTful de alto rendimiento para aplicaciones de e-commerce construida con FastAPI",
-        "technologies": ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api",
-        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
+        "title": "Sitio Web Portafolio",
+        "description": "Este sitio web. Un portafolio hecho con React y GitHub Pages.",
+        "technologies": ["React", "npm"],
+        "githubUrl": "https://github.com/deusdevok/portfolio-react",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/portfolio-react/master/portfolioimg.jpg"
       },
       {
         "id": 2,
-        "title": "Panel de Análisis de Datos",
-        "description": "Aplicación web para visualizar y analizar grandes conjuntos de datos",
-        "technologies": ["Flask", "SQLAlchemy", "Pandas", "Docker", "Redis"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api",
+        "title": "Aplicación de Flashcards",
+        "description": "Una aplicación de flashcards hecha con Django y React. Cuenta con backend y frontend, ambos conectados y desarrollados usando Docker",
+        "technologies": ["Django", "Django Rest Framework", "Docker", "React"],
+        "githubUrl": "https://github.com/deusdevok/flashcards-app",
         "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
         "id": 3,
         "title": "Sistema de Gestión de Contenido",
-        "description": "CMS completo con panel de administración y gestión de usuarios",
+        "description": "CMS con todas las funcionalidades, panel de administración y gestión de usuarios",
         "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
         "githubUrl": "https://github.com/yourusername/ecommerce-api",
         "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"

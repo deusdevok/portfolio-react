@@ -16,6 +16,37 @@
       "description": "<p>I'm a Software developer with a strong foundation in Physics, problem-solving, and software architecture. I specialize in Backend development. I've built APIs, data processing pipelines, and automation tools, working with frameworks like FastAPI, Flask and Django.</p><p>My experience spans freelance projects, personal applications, public and private sector. I enjoy learning new technologies, from modern frontend tools like React to infrastructure-as-code with Terraform, and I'm always exploring ways to improve my craft.</p><p>Outside of coding, I love chess, reading, movies, music, and more.</p>",
       "experience": [
         {
+          "company": "Flexibility",
+          "title": "Backend Developer",
+          "companyDescription": "Company specialized in international trade and customs technology.",
+          "description": "I design and build secure REST APIs and authentication mechanisms for international trade and customs platforms. I collaborate on architecture decisions, code reviews, and technical documentation, working with Python, FastAPI, MySQL, Docker, and Grafana.",
+          "period": "2026 - Present",
+          "skills": ["Python", "FastAPI", "MySQL", "Docker", "Grafana"]
+        },
+        {
+          "company": "Realistic AI",
+          "title": "Machine Learning Engineer",
+          "companyDescription": "AI company building automation solutions for the petroleum industry.",
+          "description": "I built backend services in FastAPI for AI-powered industrial automation, processing large datasets with Pandas for petroleum industry workflows. I integrated external platforms via webhooks and implemented automated testing with pytest.",
+          "period": "2026",
+          "skills": ["Python", "FastAPI", "Pandas", "pytest"]
+        },
+        {
+          "company": "SpeedAI",
+          "title": "Backend Developer",
+          "companyDescription": "Company specialized in healthcare technology platforms.",
+          "description": "I built backend functionality for a healthcare platform, including data-processing pipelines that transformed CSV datasets into standardized EDI 834 reports. I also maintained production systems and resolved application defects.",
+          "period": "2025",
+          "skills": ["Python", "Data Pipelines", "EDI 834"]
+        },
+        {
+          "company": "Marquis Data",
+          "title": "Backend and Database Developer",
+          "description": "I built backend features using Django REST Framework, extended SQL Server views and stored procedures, and maintained and enhanced existing enterprise applications.",
+          "period": "2025",
+          "skills": ["Python", "Django", "Django REST Framework", "SQL Server"]
+        },
+        {
           "company": "Pipol",
           "title": "Backend Developer",
           "companyDescription": "Company specialized in media.",
@@ -26,6 +57,7 @@
         {
           "company": "DocAI",
           "title": "Backend Developer & DevOps Engineer",
+          "companyDescription": "AI-powered document management platform.",
           "description": "I developed an API for a Content Management System (CMS) that uses AI to analyze PDF documents. I implemented FastAPI with PostgreSQL for scalability, integrated AWS S3 for file storage, deployed the application on EC2, and used pgvector for content-based searches.",
           "period": "2024",
           "skills": ["Python", "FastAPI", "PostgreSQL", "AWS S3", "EC2", "pgvector", "Docker"]
@@ -33,13 +65,15 @@
         {
           "company": "Diamond Rock",
           "title": "Backend Developer",
+          "companyDescription": "Company specialized in location-based, proximity search applications.",
           "description": "I developed a REST API in FastAPI for a content search app based on proximity to the user. I implemented FastAPI with Prisma ORM and used the H3 library to efficiently calculate distances.",
-          "period": "2023",
+          "period": "2023 - 2024",
           "skills": ["Python", "FastAPI", "Prisma ORM", "H3"]
         },
         {
           "company": "Plotly",
           "title": "MATLAB Developer",
+          "companyDescription": "Company behind the Plotly data visualization library and Dash framework.",
           "description": "I developed the MATLAB implementation of the Plotly library (Python). My main task on this project was to build a MATLAB solution from scratch, implementing different functionalities and examples.",
           "period": "2021",
           "skills": ["MATLAB", "Python", "Plotly", "Git"]
@@ -47,16 +81,10 @@
         {
           "company": "New Iron",
           "title": "Web Developer",
-          "description": "I worked as a web developer for New Iron, a furniture company. My work consisted of the complete process, from design, through implementation and publishing the site online.",
+          "companyDescription": "Furniture company.",
+          "description": "I worked as a web developer for New Iron, handling the complete process from design through implementation and publishing the site online.",
           "period": "2012-2015",
           "skills": ["HTML", "CSS", "PHP"]
-        },
-        {
-          "company": "Freelance",
-          "title": "Python Developer",
-          "description": "I worked on various Python-related projects for clients worldwide. My work included backend API development with FastAPI, Flask, and Django; data science tasks using libraries like Numpy, Pandas, and Seaborn; scraping and data collection with BeautifulSoup, Selenium, and Scrapy; and machine learning projects using scikit-learn, Keras, and TensorFlow.",
-          "period": "2018 - 2024",
-          "skills": ["Python", "FastAPI", "Flask", "Django", "NumPy", "Pandas", "Seaborn", "BeautifulSoup", "Selenium", "Scrapy", "scikit-learn", "Keras", "TensorFlow"]
         }
       ],
       "education": [
@@ -65,6 +93,12 @@
           "degree": "Bachelor of Science in Physics",
           "description": "I've studied Physics at the University of Buenos Aires, where I learned about the fundamental principles of the universe and how to apply them to real-world problems.",
           "period": "2009 - 2017"
+        },
+        {
+          "institution": "Universidad de Buenos Aires",
+          "degree": "Bachelor of Science in Computer Science (In Progress)",
+          "description": "I'm currently pursuing a second degree in Computer Science at the University of Buenos Aires, building on my background in Physics and professional software development experience.",
+          "period": "In Progress"
         }
       ],
       "certifications": [
