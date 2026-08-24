@@ -5,7 +5,7 @@
       "name": "Carlos",
       "activeSince": "ACTIVO DESDE: 2018",
       "cta": "Ver Mi Trabajo",
-      "description": "<p>Desde 2018 he estado trabajando como desarrollador de software, siendo Python mi lenguaje de preferencia.</p><br><p>Con formación en Física y pasión por construir soluciones limpias y escalables, he trabajado en proyectos que van desde aplicaciones web hasta scripts de automatización (entre muchos otros).</p><br><p>Disfruto abordando problemas complejos y entregando código eficiente y mantenible.</p>"
+      "description": "<p>Escribo Python de forma profesional desde 2018, y sigue siendo el lenguaje al que recurro primero.</p><br><p>La Física me enseñó a descomponer problemas difíciles en partes que realmente tienen sentido, un hábito que se refleja directamente en cómo diseño y construyo software.</p><br><p>Hoy en día eso se traduce en APIs backend, pipelines de datos y herramientas de automatización, construidas para clientes de los sectores público y privado, además de mis propios proyectos personales.</p><br><p>Me gusta el tipo de ingeniería que resiste el escrutinio: escalable, mantenible y construida para durar.</p>"
     },
     "about": {
       "title": "Sobre Mí",
@@ -13,7 +13,7 @@
       "experienceLog": "EXPERIENCIA",
       "educationMatrix": "EDUCACION",
       "certificationProtocols": "CERTIFICACIONES",
-      "description": "<p>Soy un desarrollador de software con una sólida base en Física, resolución de problemas y arquitectura de software. Me especializo en desarrollo Backend. He construido APIs, pipelines de procesamiento de datos y herramientas de automatización, trabajando con frameworks como FastAPI, Flask y Django.</p><p>Mi experiencia abarca proyectos freelance, aplicaciones personales, y sector público y privado. Disfruto aprendiendo nuevas tecnologías, desde herramientas frontend modernas como React hasta infraestructura como código con Terraform, y siempre estoy explorando formas de mejorar mi oficio.</p><p>Fuera de la programación, me encanta el ajedrez, la lectura, las películas, la música, y más.</p>",
+      "description": "<p>Soy un Desarrollador de Software con una sólida base en Física, resolución de problemas y arquitectura de software. Me especializo en desarrollo backend: construyo APIs, pipelines de procesamiento de datos y herramientas de automatización con frameworks como FastAPI, Flask y Django.</p><p>Mi experiencia abarca proyectos personales, así como trabajos en los sectores público y privado. Disfruto aprendiendo nuevas tecnologías, desde herramientas frontend modernas como React hasta infraestructura como código con Terraform, y siempre estoy explorando formas de mejorar mi oficio.</p><p>Fuera de la programación, me encanta el ajedrez, la lectura, las películas, la música, y más.</p>",
       "experience": [
         {
           "company": "Flexibility",
