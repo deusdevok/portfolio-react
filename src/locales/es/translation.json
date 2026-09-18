@@ -11,7 +11,7 @@
       "title": "Sobre Mí",
       "profileOverview": "PERFIL",
       "experienceLog": "EXPERIENCIA",
-      "educationMatrix": "EDUCACION",
+      "educationMatrix": "EDUCACIÓN",
       "certificationProtocols": "CERTIFICACIONES",
       "description": "<p>Soy un Desarrollador de Software con una sólida base en Física, resolución de problemas y arquitectura de software. Me especializo en desarrollo backend: construyo APIs, pipelines de procesamiento de datos y herramientas de automatización con frameworks como FastAPI, Flask y Django.</p><p>Mi experiencia abarca proyectos personales, así como trabajos en los sectores público y privado. Disfruto aprendiendo nuevas tecnologías, desde herramientas frontend modernas como React hasta infraestructura como código con Terraform, y siempre estoy explorando formas de mejorar mi oficio.</p><p>Fuera de la programación, me encanta el ajedrez, la lectura, las películas, la música, y más.</p>",
       "experience": [
@@ -19,15 +19,15 @@
           "company": "Flexibility",
           "title": "Desarrollador Backend",
           "companyDescription": "Empresa especializada en tecnología para comercio internacional y aduanas.",
-          "description": "Diseño y desarrollo APIs REST seguras y mecanismos de autenticación para plataformas de comercio internacional y aduanas. Colaboro en decisiones de arquitectura, revisiones de código y documentación técnica, trabajando con Python, FastAPI, MySQL, Docker y Grafana.",
+          "description": "<p>Diseño y desarrollo APIs REST seguras y mecanismos de autenticación para plataformas de comercio internacional y aduanas. Colaboro en decisiones de arquitectura, revisiones de código y documentación técnica. Una de mis principales tareas fue desarrollar una funcionalidad desde cero.</p><p>Responsabilidades principales:</p><ul><li>Desarrollo de nuevos módulos del código backend</li><li>Creación y actualización de tablas de MySQL a través de migraciones con Alembic</li><li>Monitoreo y registro de logs con Grafana</li></ul>",
           "period": "2026 - Presente",
-          "skills": ["Python", "FastAPI", "MySQL", "Docker", "Grafana"]
+          "skills": ["Python", "FastAPI", "MySQL", "Redis", "RabbitMQ", "Docker", "Grafana", "Jira"]
         },
         {
           "company": "Realistic AI",
           "title": "Ingeniero de Machine Learning",
           "companyDescription": "Empresa de IA que desarrolla soluciones de automatización para la industria petrolera.",
-          "description": "Desarrollé servicios backend en FastAPI para automatización industrial impulsada por IA, procesando grandes conjuntos de datos con Pandas para flujos de trabajo de la industria petrolera. Integré plataformas externas mediante webhooks e implementé pruebas automatizadas con pytest.",
+          "description": "<p>Desarrollé herramientas basadas en IA para optimizar procesos en la industria petrolera. El trabajo se centró en servicios backend en Python que procesan grandes volúmenes de datos y se conectan con plataformas externas.</p><p>Responsabilidades principales:</p><ul><li>Construcción de servicios backend con FastAPI</li><li>Procesamiento de grandes volúmenes de datos con Pandas</li><li>Integración con plataformas externas (Bubble) mediante webhooks</li><li>Implementación de testing automatizado con pytest</li></ul>",
           "period": "2026",
           "skills": ["Python", "FastAPI", "Pandas", "pytest"]
         },
@@ -35,14 +35,14 @@
           "company": "SpeedAI",
           "title": "Desarrollador Backend",
           "companyDescription": "Empresa especializada en plataformas de tecnología para el sector salud.",
-          "description": "Desarrollé funcionalidades backend para una plataforma de salud, incluyendo pipelines de procesamiento de datos que transformaban conjuntos de datos CSV en reportes EDI 834 estandarizados. También mantuve sistemas en producción y resolví defectos de la aplicación.",
+          "description": "<p>Desarrollé y mantuve una aplicación para la industria de la salud que toma un conjunto de archivos CSV y genera reportes EDI 834 estandarizados. El trabajo consistió en construir pipelines de datos en Python que convierten datos tabulares sin procesar en un formato estandarizado y estrictamente estructurado.</p><p>Responsabilidades principales:</p><ul><li>Desarrollo de funcionalidades backend y pipelines de procesamiento de datos</li><li>Mantenimiento de sistemas en producción</li><li>Corrección de bugs de la aplicación</li></ul>",
           "period": "2025",
           "skills": ["Python", "Data Pipelines", "EDI 834"]
         },
         {
           "company": "Marquis Data",
           "title": "Desarrollador Backend y de Bases de Datos",
-          "description": "Desarrollé funcionalidades backend usando Django REST Framework, extendí vistas y procedimientos almacenados de SQL Server, y mantuve y mejoré aplicaciones empresariales existentes.",
+          "description": "<p>Trabajé como desarrollador backend (Django) y de SQL Server en aplicaciones empresariales. Mi trabajo abarcó tanto la capa de aplicación, con Django REST Framework, como la capa de base de datos, en SQL Server.</p><p>Responsabilidades principales:</p><ul><li>Implementación de funcionalidades backend faltantes con Django REST Framework</li><li>Implementación y modificación de vistas y procedimientos almacenados en SQL Server</li><li>Mantenimiento y mejora de aplicaciones empresariales existentes</li></ul>",
           "period": "2025",
           "skills": ["Python", "Django", "Django REST Framework", "SQL Server"]
         },
@@ -50,7 +50,7 @@
           "company": "Pipol",
           "title": "Desarrollador Backend",
           "companyDescription": "Empresa especializada en medios.",
-          "description": "Trabajé en la migración de código de Flask a FastAPI, mejorando el rendimiento. Transformé una API basada en REST a GraphQL usando Strawberry, optimicé la comunicación con el frontend, gestioné la sincronización de datos en BigQuery, implementé monitoreo y logging en GCP, y brindé soporte técnico y colaboración con el equipo de frontend.",
+          "description": "<p>Trabajé en la aplicación web de la empresa, desarrollada inicialmente con Flask. Lideré la migración de Flask a FastAPI para mejorar el rendimiento y la organización del código, y llevé a cabo la transición de la arquitectura backend de REST a GraphQL.</p><p>Responsabilidades principales:</p><ul><li>Mantenimiento y actualización del código backend</li><li>Actualización de esquemas GraphQL utilizando Strawberry</li><li>Sincronización de datos con tablas de BigQuery</li><li>Monitoreo y registro de logs en Google Cloud Platform (GCP)</li><li>Soporte continuo al equipo de frontend</li></ul>",
           "period": "2024 - 2025",
           "skills": ["Python", "FastAPI", "Flask", "GraphQL", "Strawberry", "BigQuery", "GCP", "Docker"]
         },
@@ -58,7 +58,7 @@
           "company": "DocAI",
           "title": "Desarrollador Backend e Ingeniero DevOps",
           "companyDescription": "Plataforma de gestión documental impulsada por IA.",
-          "description": "Desarrollé una API para un Sistema de Gestión de Contenidos (CMS) que utiliza IA para analizar documentos PDF. Implementé FastAPI con PostgreSQL para escalabilidad, integré AWS S3 para almacenamiento de archivos, desplegué la aplicación en EC2 y utilicé pgvector para búsquedas basadas en contenido.",
+          "description": "<p>Desarrollé una API para un Sistema de Gestión de Contenidos (CMS) que utiliza IA para analizar documentos PDF. Fui responsable tanto del backend como del despliegue, desde la base de datos y el almacenamiento de archivos hasta el alojamiento de la aplicación en AWS.</p><p>Responsabilidades principales:</p><ul><li>Construcción de la API con FastAPI y PostgreSQL</li><li>Integración de AWS S3 para la carga y el almacenamiento de archivos</li><li>Despliegue de la aplicación en EC2</li><li>Uso de pgvector para búsquedas basadas en contenido</li></ul>",
           "period": "2024",
           "skills": ["Python", "FastAPI", "PostgreSQL", "AWS S3", "EC2", "pgvector", "Docker"]
         },
@@ -66,7 +66,7 @@
           "company": "Diamond Rock",
           "title": "Desarrollador Backend",
           "companyDescription": "Empresa especializada en aplicaciones de búsqueda por proximidad y basadas en ubicación.",
-          "description": "Desarrollé una API REST en FastAPI para una aplicación de búsqueda de contenido basada en la proximidad del usuario. Implementé FastAPI con Prisma ORM y utilicé la librería H3 para calcular distancias de manera eficiente.",
+          "description": "<p>Desarrollé una API REST para una aplicación de búsqueda de contenido basada en la proximidad del usuario. La API permite a la aplicación encontrar contenido cercano al usuario según su ubicación.</p><p>Responsabilidades principales:</p><ul><li>Construcción de la API en FastAPI con Prisma ORM</li><li>Uso de la librería H3 para calcular distancias de manera eficiente</li></ul>",
           "period": "2023 - 2024",
           "skills": ["Python", "FastAPI", "Prisma ORM", "H3"]
         },
@@ -74,7 +74,7 @@
           "company": "Plotly",
           "title": "Desarrollador MATLAB",
           "companyDescription": "Empresa creadora de la librería de visualización de datos Plotly y el framework Dash.",
-          "description": "Desarrollé la implementación en MATLAB de la librería Plotly (Python). Mi tarea principal en este proyecto fue construir una solución en MATLAB desde cero, implementando distintas funcionalidades y ejemplos.",
+          "description": "<p>Trabajé en la traducción del sistema Dash de Plotly, del lenguaje Python a MATLAB. El proyecto consistió en reproducir en MATLAB el comportamiento de código Python existente, trabajando con ambos lenguajes.</p><p>Responsabilidades principales:</p><ul><li>Construcción de una solución en MATLAB desde cero</li><li>Implementación en MATLAB de diversas funciones y ejemplos ya existentes en la plataforma</li></ul>",
           "period": "2021",
           "skills": ["MATLAB", "Python", "Plotly", "Git"]
         },
@@ -82,7 +82,7 @@
           "company": "New Iron",
           "title": "Desarrollador Web",
           "companyDescription": "Empresa de muebles.",
-          "description": "Trabajé como desarrollador web para New Iron, encargándome del proceso completo, desde el diseño hasta la implementación y publicación del sitio en línea.",
+          "description": "<p>Desarrollé el sitio web de una empresa de muebles y también trabajé como help desk, entre otras tareas. El puesto combinaba el desarrollo web con soporte técnico para las necesidades diarias de la empresa.</p><p>Responsabilidades principales:</p><ul><li>Diseño del sitio</li><li>Implementación con HTML, CSS y PHP</li><li>Publicación en línea</li><li>Soporte de help desk</li></ul>",
           "period": "2012-2015",
           "skills": ["HTML", "CSS", "PHP"]
         }
@@ -153,7 +153,7 @@
       "githubTitle": "REPOSITORIO DE CÓDIGO"
     },
     "skills": {
-      "techStack": "TECNOLOGIAS",
+      "techStack": "TECNOLOGÍAS",
       "expert": "EXPERTO",
       "advanced": "AVANZADO",
       "intermediate": "INTERMEDIO",

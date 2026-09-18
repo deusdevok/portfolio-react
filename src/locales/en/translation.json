@@ -19,15 +19,15 @@
           "company": "Flexibility",
           "title": "Backend Developer",
           "companyDescription": "Company specialized in international trade and customs technology.",
-          "description": "I design and build secure REST APIs and authentication mechanisms for international trade and customs platforms. I collaborate on architecture decisions, code reviews, and technical documentation, working with Python, FastAPI, MySQL, Docker, and Grafana.",
+          "description": "<p>I design and build secure REST APIs and authentication mechanisms for international trade and customs platforms. I collaborate on architecture decisions, code reviews, and technical documentation. One of my main tasks was to develop a feature from scratch.</p><p>Main responsibilities:</p><ul><li>Development of new backend code modules</li><li>Creation and updating of MySQL tables through Alembic migrations</li><li>Monitoring and log management with Grafana</li></ul>",
           "period": "2026 - Present",
-          "skills": ["Python", "FastAPI", "MySQL", "Docker", "Grafana"]
+          "skills": ["Python", "FastAPI", "MySQL", "Redis", "RabbitMQ", "Docker", "Grafana", "Jira"]
         },
         {
           "company": "Realistic AI",
           "title": "Machine Learning Engineer",
           "companyDescription": "AI company building automation solutions for the petroleum industry.",
-          "description": "I built backend services in FastAPI for AI-powered industrial automation, processing large datasets with Pandas for petroleum industry workflows. I integrated external platforms via webhooks and implemented automated testing with pytest.",
+          "description": "<p>I developed AI-based tools to optimize processes in the petroleum industry. The work centered on Python backend services that process large volumes of data and connect with external platforms.</p><p>Main responsibilities:</p><ul><li>Built backend services with FastAPI</li><li>Processed large volumes of data with Pandas</li><li>Integrated external platforms (Bubble) via webhooks</li><li>Implemented automated testing with pytest</li></ul>",
           "period": "2026",
           "skills": ["Python", "FastAPI", "Pandas", "pytest"]
         },
@@ -35,14 +35,14 @@
           "company": "SpeedAI",
           "title": "Backend Developer",
           "companyDescription": "Company specialized in healthcare technology platforms.",
-          "description": "I built backend functionality for a healthcare platform, including data-processing pipelines that transformed CSV datasets into standardized EDI 834 reports. I also maintained production systems and resolved application defects.",
+          "description": "<p>I developed and maintained an application for the healthcare industry that takes a set of CSV files and generates standardized EDI 834 reports. The work involved building Python data pipelines that convert raw tabular data into a strictly structured, standardized format.</p><p>Main responsibilities:</p><ul><li>Developed backend functionality and data-processing pipelines</li><li>Maintained production systems</li><li>Fixed application bugs</li></ul>",
           "period": "2025",
           "skills": ["Python", "Data Pipelines", "EDI 834"]
         },
         {
           "company": "Marquis Data",
           "title": "Backend and Database Developer",
-          "description": "I built backend features using Django REST Framework, extended SQL Server views and stored procedures, and maintained and enhanced existing enterprise applications.",
+          "description": "<p>I worked as a backend (Django) and SQL Server developer on enterprise applications. My work spanned both the application layer, with Django REST Framework, and the database layer, in SQL Server.</p><p>Main responsibilities:</p><ul><li>Implemented missing backend features using Django REST Framework</li><li>Implemented and modified SQL Server views and stored procedures</li><li>Maintained and enhanced existing enterprise applications</li></ul>",
           "period": "2025",
           "skills": ["Python", "Django", "Django REST Framework", "SQL Server"]
         },
@@ -50,7 +50,7 @@
           "company": "Pipol",
           "title": "Backend Developer",
           "companyDescription": "Company specialized in media.",
-          "description": "I worked on migrating code from Flask to FastAPI, improving performance. I transformed a REST-based API into GraphQL using Strawberry, optimized communication with the frontend, managed data synchronization in BigQuery, implemented monitoring and logging in GCP, and provided technical support and collaboration with the frontend team.",
+          "description": "<p>I worked on the company's web application, initially built with Flask. I led the migration from Flask to FastAPI to improve performance and code organization, and carried out the transition of the backend architecture from REST to GraphQL.</p><p>Main responsibilities:</p><ul><li>Maintenance and updating of the backend code</li><li>Updating GraphQL schemas using Strawberry</li><li>Data synchronization with BigQuery tables</li><li>Monitoring and logging in Google Cloud Platform (GCP)</li><li>Ongoing support for the frontend team</li></ul>",
           "period": "2024 - 2025",
           "skills": ["Python", "FastAPI", "Flask", "GraphQL", "Strawberry", "BigQuery", "GCP", "Docker"]
         },
@@ -58,7 +58,7 @@
           "company": "DocAI",
           "title": "Backend Developer & DevOps Engineer",
           "companyDescription": "AI-powered document management platform.",
-          "description": "I developed an API for a Content Management System (CMS) that uses AI to analyze PDF documents. I implemented FastAPI with PostgreSQL for scalability, integrated AWS S3 for file storage, deployed the application on EC2, and used pgvector for content-based searches.",
+          "description": "<p>I developed an API for a Content Management System (CMS) that uses AI to analyze PDF documents. I was responsible for both the backend and the deployment, from the database and file storage to hosting the application on AWS.</p><p>Main responsibilities:</p><ul><li>Built the API with FastAPI and PostgreSQL</li><li>Integrated AWS S3 for file uploads and storage</li><li>Deployed the application on EC2</li><li>Used pgvector for content-based searches</li></ul>",
           "period": "2024",
           "skills": ["Python", "FastAPI", "PostgreSQL", "AWS S3", "EC2", "pgvector", "Docker"]
         },
@@ -66,7 +66,7 @@
           "company": "Diamond Rock",
           "title": "Backend Developer",
           "companyDescription": "Company specialized in location-based, proximity search applications.",
-          "description": "I developed a REST API in FastAPI for a content search app based on proximity to the user. I implemented FastAPI with Prisma ORM and used the H3 library to efficiently calculate distances.",
+          "description": "<p>I developed a REST API for a content search app based on proximity to the user. The API lets the app find content near the user based on their location.</p><p>Main responsibilities:</p><ul><li>Built the API in FastAPI with Prisma ORM</li><li>Used the H3 library to efficiently calculate distances</li></ul>",
           "period": "2023 - 2024",
           "skills": ["Python", "FastAPI", "Prisma ORM", "H3"]
         },
@@ -74,7 +74,7 @@
           "company": "Plotly",
           "title": "MATLAB Developer",
           "companyDescription": "Company behind the Plotly data visualization library and Dash framework.",
-          "description": "I developed the MATLAB implementation of the Plotly library (Python). My main task on this project was to build a MATLAB solution from scratch, implementing different functionalities and examples.",
+          "description": "<p>I worked on translating Plotly's Dash system from Python to MATLAB. The project involved reproducing the behavior of existing Python code in MATLAB, working across both languages.</p><p>Main responsibilities:</p><ul><li>Built a MATLAB solution from scratch</li><li>Implemented in MATLAB various functions and examples already existing on the platform</li></ul>",
           "period": "2021",
           "skills": ["MATLAB", "Python", "Plotly", "Git"]
         },
@@ -82,7 +82,7 @@
           "company": "New Iron",
           "title": "Web Developer",
           "companyDescription": "Furniture company.",
-          "description": "I worked as a web developer for New Iron, handling the complete process from design through implementation and publishing the site online.",
+          "description": "<p>I developed the website for a furniture company and also worked as help desk, among other tasks. The role combined web development with technical support for the company's day-to-day needs.</p><p>Main responsibilities:</p><ul><li>Designed the site</li><li>Implemented it with HTML, CSS, and PHP</li><li>Published it online</li><li>Provided help desk support</li></ul>",
           "period": "2012-2015",
           "skills": ["HTML", "CSS", "PHP"]
         }
@@ -231,6 +231,14 @@
       "projectList": [
       {
         "id": 1,
+        "title": "Pyntroduction to Python",
+        "description": "An introductory Python book, deployed with github pages and Sphinx.",
+        "technologies": ["Python", "Sphinx"],
+        "githubUrl": "https://deusdevok.github.io/PyntroductionToPython/",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/PyntroductionToPython/refs/heads/main/pyntrotopythonbook.png"
+      },
+      {
+        "id": 2,
         "title": "Portfolio Website",
         "description": "This website. A portfolio made with React and GitHub Pages.",
         "technologies": ["React", "npm"],
@@ -238,7 +246,7 @@
         "imageUrl": "https://raw.githubusercontent.com/deusdevok/portfolio-react/master/portfolioimg.jpg"
       },
       {
-        "id": 2,
+        "id": 3,
         "title": "Flashcards App",
         "description": "A flashcards app made with Django and React. It has both a backend and a frontend. Both are connected and developed using Docker",
         "technologies": ["Django", "Django Rest Framework", "Docker", "React"],
@@ -246,7 +254,7 @@
         "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
       },
       {
-        "id": 3,
+        "id": 4,
         "title": "Content Management System",
         "description": "Full featured CMS with admin panel and user management",
         "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],

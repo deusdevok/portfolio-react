@@ -717,6 +717,29 @@ body {
   font-size: 0.9em;
 }
 
+.timeline-description p {
+  margin-bottom: 10px;
+}
+
+.timeline-description ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
+}
+
+.timeline-description li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 4px;
+}
+
+.timeline-description li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #00BFFF;
+}
+
 /* Timeline Skills Styles */
 .timeline-skills {
   margin-top: 15px;

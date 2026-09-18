@@ -37,7 +37,10 @@ function About() {
                     {exp.companyDescription && (
                       <p className="timeline-company-description">{exp.companyDescription}</p>
                     )}
-                    <p className="timeline-description">{exp.description}</p>
+                    <div
+                      className="timeline-description"
+                      dangerouslySetInnerHTML={{ __html: exp.description }}
+                    />
                     {exp.skills && exp.skills.length > 0 && (
                       <div className="timeline-skills">
                         <div className="skills-label">TECH STACK:</div>
