@@ -5,7 +5,6 @@
 /* ==========================================================================
    IMPORTS & RESET
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 * {
   margin: 0;
@@ -17,7 +16,7 @@
    GLOBAL STYLES
    ========================================================================== */
 body {
-  font-family: 'Orbitron', monospace;
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(135deg, #0a0a0a 0%, #001F3F 50%, #0074D9 100%);
   color: #00BFFF;
   min-height: 100vh;
@@ -86,7 +85,7 @@ body {
   border: 2px solid #00BFFF;
   padding: 10px 15px;
   cursor: pointer;
-  font-family: 'Orbitron', monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -231,7 +230,7 @@ body {
   border: 2px solid #00BFFF;
   padding: 10px 20px;
   cursor: pointer;
-  font-family: 'Orbitron', monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -388,7 +387,7 @@ body {
 }
 
 .mobile-nav-title {
-  font-family: 'Orbitron', monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -410,7 +409,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  font-family: 'Orbitron', monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -434,7 +433,7 @@ body {
   padding: 15px 20px;
   color: #C0C0C0;
   text-decoration: none;
-  font-family: 'Orbitron', monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
