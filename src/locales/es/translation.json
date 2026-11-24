@@ -12,14 +12,14 @@
       "profileOverview": "PERFIL",
       "experienceLog": "EXPERIENCIA",
       "educationMatrix": "EDUCACIÓN",
-      "certificationProtocols": "CERTIFICACIONES",
+      "certificationProtocols": "CERTIFICACIÓN",
       "description": "<p>Soy un Desarrollador de Software con una sólida base en Física, resolución de problemas y arquitectura de software. Me especializo en desarrollo backend: construyo APIs, pipelines de procesamiento de datos y herramientas de automatización con frameworks como FastAPI, Flask y Django.</p><p>Mi experiencia abarca proyectos personales, así como trabajos en los sectores público y privado. Disfruto aprendiendo nuevas tecnologías, desde herramientas frontend modernas como React hasta infraestructura como código con Terraform, y siempre estoy explorando formas de mejorar mi oficio.</p><p>Fuera de la programación, me encanta el ajedrez, la lectura, las películas, la música, y más.</p>",
       "experience": [
         {
           "company": "Flexibility",
           "title": "Desarrollador Backend",
           "companyDescription": "Empresa especializada en tecnología para comercio internacional y aduanas.",
-          "description": "<p>Diseño y desarrollo APIs REST seguras y mecanismos de autenticación para plataformas de comercio internacional y aduanas. Colaboro en decisiones de arquitectura, revisiones de código y documentación técnica. Una de mis principales tareas fue desarrollar una funcionalidad desde cero.</p><p>Responsabilidades principales:</p><ul><li>Desarrollo de nuevos módulos del código backend</li><li>Creación y actualización de tablas de MySQL a través de migraciones con Alembic</li><li>Monitoreo y registro de logs con Grafana</li></ul>",
+          "description": "<p>Diseño y desarrollo APIs REST seguras y mecanismos de autenticación para plataformas de comercio internacional y aduanas. Colaboro en decisiones de arquitectura, revisiones de código y documentación técnica. Una de mis principales tareas fue desarrollar una funcionalidad desde cero.</p><p>Responsabilidades principales:</p><ul><li>Desarrollo de nuevos módulos del código backend</li><li>Creación y actualización de tablas de MySQL a través de migraciones con Alembic</li><li>Monitoreo y gestión de logs con Grafana</li></ul>",
           "period": "2026 - Presente",
           "skills": ["Python", "FastAPI", "MySQL", "Redis", "RabbitMQ", "Docker", "Grafana", "Jira"]
         },
@@ -91,7 +91,7 @@
         {
           "institution": "Universidad de Buenos Aires",
           "degree": "Licenciatura en Ciencias Físicas",
-          "description": "He estudiado física en la Universidad de Buenos Aires, donde aprendí sobre los principios fundamentales del universo y cómo aplicarlos a problemas del mundo real.",
+          "description": "He estudiado Física en la Universidad de Buenos Aires, donde aprendí sobre los principios fundamentales del universo y cómo aplicarlos a problemas del mundo real.",
           "period": "2009 - 2017"
         },
         {
@@ -143,8 +143,8 @@
     "contact": {
       "contactTitle": "Enlace de Comunicaciones",
       "email": "carlosaprado@gmail.com",
-      "linkedin": "/in/carlosaprado/",
-      "github": "@deusdevok",
+      "linkedin": "https://www.linkedin.com/in/carlosaprado/",
+      "github": "https://github.com/deusdevok",
       "active": "ACTIVO",
       "verified": "VERIFICADO",
       "public": "PÚBLICO",
@@ -164,7 +164,7 @@
           "key": "python",
           "short": "PY",
           "name": "Python",
-          "years": 7,
+          "years": 8,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
           "description": "Amplia experiencia construyendo servicios backend, APIs, herramientas de automatización y pipelines de procesamiento de datos usando Python y su ecosistema."
         },
@@ -172,7 +172,7 @@
           "key": "databases",
           "short": "DB",
           "name": "Bases de Datos",
-          "years": 4,
+          "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
           "description": "Competente en diseño de bases de datos relacionales, consultas, optimización e integración de ORMs, principalmente con PostgreSQL."
         },
@@ -180,7 +180,7 @@
           "key": "javascript",
           "short": "JS",
           "name": "JavaScript",
-          "years": 5,
+          "years": 4,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           "description": "Experiencia construyendo frontends interactivos e integrando APIs, con foco en características modernas de ES6+."
         },
@@ -188,7 +188,7 @@
           "key": "react",
           "short": "RE",
           "name": "React",
-          "years": 2,
+          "years": 3,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
           "description": "Hábil en la creación de interfaces de usuario responsivas y basadas en componentes, con gestión de estado y frontends impulsados por APIs."
         },
@@ -204,7 +204,7 @@
           "key": "AWS",
           "short": "AWS",
           "name": "AWS",
-          "years": 4,
+          "years": 5,
           "icon": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
           "description": "Experiencia práctica desplegando y gestionando aplicaciones en AWS, incluyendo configuraciones de EC2, RDS, S3 e IAM."
         },
@@ -220,7 +220,7 @@
           "key": "Git",
           "short": "GIT",
           "name": "Git",
-          "years": 4,
+          "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
           "description": "Competente en flujos de trabajo de control de versiones, estrategias de branching y desarrollo colaborativo usando Git y GitHub."
         }
@@ -231,6 +231,14 @@
       "projectList": [
       {
         "id": 1,
+        "title": "Pyntroduction to Python",
+        "description": "Un libro introductorio de Python, desplegado con GitHub Pages y Sphinx.",
+        "technologies": ["Python", "Sphinx"],
+        "githubUrl": "https://deusdevok.github.io/PyntroductionToPython/",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/PyntroductionToPython/refs/heads/main/pyntrotopythonbook.png"
+      },
+      {
+        "id": 2,
         "title": "Sitio Web Portafolio",
         "description": "Este sitio web. Un portafolio hecho con React y GitHub Pages.",
         "technologies": ["React", "npm"],
@@ -238,20 +246,12 @@
         "imageUrl": "https://raw.githubusercontent.com/deusdevok/portfolio-react/master/portfolioimg.jpg"
       },
       {
-        "id": 2,
-        "title": "Aplicación de Flashcards",
-        "description": "Una aplicación de flashcards hecha con Django y React. Cuenta con backend y frontend, ambos conectados y desarrollados usando Docker",
-        "technologies": ["Django", "Django Rest Framework", "Docker", "React"],
-        "githubUrl": "https://github.com/deusdevok/flashcards-app",
-        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
-      },
-      {
         "id": 3,
-        "title": "Sistema de Gestión de Contenido",
-        "description": "CMS con todas las funcionalidades, panel de administración y gestión de usuarios",
-        "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api",
-        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
+        "title": "Salvavidas",
+        "description": "Un juego de dados multijugador en línea (aplicación web)",
+        "technologies": ["FastAPI", "React", "websockets", "AWS"],
+        "githubUrl": "https://salvavidas.cprado.dev/",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/portfolio-react/master/salvavidas.png"
       }
     ]
   },

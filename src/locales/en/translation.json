@@ -143,8 +143,8 @@
     "contact": {
       "contactTitle": "Communications Link",
       "email": "carlosaprado@gmail.com",
-      "linkedin": "/in/carlosaprado/",
-      "github": "@deusdevok",
+      "linkedin": "https://www.linkedin.com/in/carlosaprado/",
+      "github": "https://github.com/deusdevok",
       "active": "ACTIVE",
       "verified": "VERIFIED",
       "public": "PUBLIC",
@@ -164,7 +164,7 @@
           "key": "python", 
           "short": "PY", 
           "name": "Python", 
-          "years": 7,
+          "years": 8,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
           "description": "Extensive experience building backend services, APIs, automation tools, and data processing pipelines using Python and its ecosystem."
         },
@@ -172,7 +172,7 @@
           "key": "databases", 
           "short": "DB", 
           "name": "Databases", 
-          "years": 4,
+          "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
           "description": "Proficient in relational database design, querying, optimization, and ORM integration, mainly with PostgreSQL."
         },
@@ -180,7 +180,7 @@
           "key": "javascript", 
           "short": "JS", 
           "name": "JavaScript", 
-          "years": 5,
+          "years": 4,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
           "description": "Experience building interactive frontends and integrating APIs, with a focus on modern ES6+ features."
         },
@@ -188,7 +188,7 @@
           "key": "react", 
           "short": "RE", 
           "name": "React", 
-          "years": 2,
+          "years": 3,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
           "description": "Skilled in creating responsive and component-based user interfaces, with state management and API-driven frontends."
         },
@@ -204,7 +204,7 @@
           "key": "AWS",
           "short": "AWS",
           "name": "AWS",
-          "years": 4,
+          "years": 5,
           "icon": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
           "description": "Hands-on experience deploying and managing applications in AWS, including EC2, RDS, S3, and IAM configurations."
         },
@@ -220,7 +220,7 @@
           "key": "Git",
           "short": "GIT",
           "name": "Git",
-          "years": 4,
+          "years": 5,
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
           "description": "Proficient with version control workflows, branching strategies, and collaborative development using Git and GitHub."
         }
@@ -247,19 +247,11 @@
       },
       {
         "id": 3,
-        "title": "Flashcards App",
-        "description": "A flashcards app made with Django and React. It has both a backend and a frontend. Both are connected and developed using Docker",
-        "technologies": ["Django", "Django Rest Framework", "Docker", "React"],
-        "githubUrl": "https://github.com/deusdevok/flashcards-app",
-        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
-      },
-      {
-        "id": 4,
-        "title": "Content Management System",
-        "description": "Full featured CMS with admin panel and user management",
-        "technologies": ["Python", "Django", "PostgreSQL", "Docker", "JWT Auth"],
-        "githubUrl": "https://github.com/yourusername/ecommerce-api",
-        "imageUrl": "https://raw.githubusercontent.com/deusdevok/flashcards-app/main/flashcardsapp.jpg"
+        "title": "Salvavidas",
+        "description": "A multiplayer online dice game (web app)",
+        "technologies": ["FastAPI", "React", "websockets", "AWS"],
+        "githubUrl": "https://salvavidas.cprado.dev/",
+        "imageUrl": "https://raw.githubusercontent.com/deusdevok/portfolio-react/master/salvavidas.png"
       }
     ]
   },
